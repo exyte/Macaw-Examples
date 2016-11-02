@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'PeriodicTable' do
+    pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git'
+end
