@@ -1,0 +1,28 @@
+PODS:
+  - Macaw (0.7.0):
+    - RxSwift (= 3.0.0-beta.1)
+    - SWXMLHash (~> 3.0.0)
+  - RxSwift (3.0.0-beta.1)
+  - SWXMLHash (3.0.2)
+
+DEPENDENCIES:
+  - Macaw (from `https://github.com/exyte/Macaw.git`, branch `content_animation`)
+
+EXTERNAL SOURCES:
+  Macaw:
+    :branch: content_animation
+    :git: https://github.com/exyte/Macaw.git
+
+CHECKOUT OPTIONS:
+  Macaw:
+    :commit: 213a9b6b5bc729e0a6b1f230a1c0544b757bf12c
+    :git: https://github.com/exyte/Macaw.git
+
+SPEC CHECKSUMS:
+  Macaw: 828e0271a6013fddd2dc6ab456b709d9f59056e5
+  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+  SWXMLHash: e0f6935971f01b06fb228cf435510d998ecde647
+
+PODFILE CHECKSUM: 03feb16081083cf55448348712ca2a5f70a1e6d8
+
+COCOAPODS: 1.1.0.rc.2
