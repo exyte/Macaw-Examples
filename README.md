@@ -30,3 +30,11 @@ Do you like chemistry? An iPad application shows full power of Macaw: affine tra
 ### HealthStat
 
 Activity Monitor App Concept shows total of steps, running level and daily summary.
+
+## Author
+
+This project is maintained by the [exyte](http://www.exyte.com) company, a team of experienced software engineers from the cold Siberia. We don't have bears and don't like vodka, but we love to create great applications! Just [contact us](mailto:info@exyte.com).
+
+## License
+
+Macaw Examples are available under the MIT license. See the LICENSE file for more info.
