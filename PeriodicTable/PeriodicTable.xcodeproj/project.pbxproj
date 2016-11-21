@@ -16,6 +16,7 @@
 		57378C471DC99FF200BDEA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C411DC99FF200BDEA57 /* ViewController.swift */; };
 		58AB71071DD2469200EE8A09 /* PeriodicTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71051DD2469200EE8A09 /* PeriodicTable.swift */; };
 		58AB71081DD2469200EE8A09 /* PeriodicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */; };
+		B014EA441DE2FAF500ADD2B2 /* table.json in Resources */ = {isa = PBXBuildFile; fileRef = B014EA431DE2FAF500ADD2B2 /* table.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		57378C411DC99FF200BDEA57 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58AB71051DD2469200EE8A09 /* PeriodicTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTable.swift; sourceTree = "<group>"; };
 		58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTableController.swift; sourceTree = "<group>"; };
+		B014EA431DE2FAF500ADD2B2 /* table.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = table.json; sourceTree = "<group>"; };
 		BF9127A3AA73AF1A4D6EACF3 /* Pods-PeriodicTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriodicTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		57378C391DC99FF200BDEA57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B014EA431DE2FAF500ADD2B2 /* table.json */,
 				57378C3A1DC99FF200BDEA57 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B014EA441DE2FAF500ADD2B2 /* table.json in Resources */,
 				57378C451DC99FF200BDEA57 /* LaunchScreen.storyboard in Resources */,
 				57378C441DC99FF200BDEA57 /* Assets.xcassets in Resources */,
 				57378C431DC99FF200BDEA57 /* Info.plist in Resources */,
@@ -372,6 +376,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -387,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.PeriodicTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

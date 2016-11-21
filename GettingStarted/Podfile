@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'GettingStarted' do
-    pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git'
+    pod 'Macaw', '0.7.0'
 end
