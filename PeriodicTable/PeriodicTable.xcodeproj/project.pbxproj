@@ -14,6 +14,8 @@
 		57378C451DC99FF200BDEA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3D1DC99FF200BDEA57 /* LaunchScreen.storyboard */; };
 		57378C461DC99FF200BDEA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3F1DC99FF200BDEA57 /* Main.storyboard */; };
 		57378C471DC99FF200BDEA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C411DC99FF200BDEA57 /* ViewController.swift */; };
+		58AB71071DD2469200EE8A09 /* PeriodicTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71051DD2469200EE8A09 /* PeriodicTable.swift */; };
+		58AB71081DD2469200EE8A09 /* PeriodicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		57378C3E1DC99FF200BDEA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57378C401DC99FF200BDEA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57378C411DC99FF200BDEA57 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58AB71051DD2469200EE8A09 /* PeriodicTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTable.swift; sourceTree = "<group>"; };
+		58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTableController.swift; sourceTree = "<group>"; };
 		BF9127A3AA73AF1A4D6EACF3 /* Pods-PeriodicTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriodicTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,8 @@
 				57378C3D1DC99FF200BDEA57 /* LaunchScreen.storyboard */,
 				57378C3F1DC99FF200BDEA57 /* Main.storyboard */,
 				57378C411DC99FF200BDEA57 /* ViewController.swift */,
+				58AB71051DD2469200EE8A09 /* PeriodicTable.swift */,
+				58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -232,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57378C471DC99FF200BDEA57 /* ViewController.swift in Sources */,
+				58AB71071DD2469200EE8A09 /* PeriodicTable.swift in Sources */,
 				57378C421DC99FF200BDEA57 /* AppDelegate.swift in Sources */,
+				58AB71081DD2469200EE8A09 /* PeriodicTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
