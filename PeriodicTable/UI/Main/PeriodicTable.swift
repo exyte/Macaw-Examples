@@ -21,7 +21,7 @@ class PeriodicTable: MacawView {
 
 	private let elements: [Node]
 
-	private var state: Int = 0
+	private var showTable = true
 
 	private var animations: [Animation] = []
 
@@ -39,7 +39,6 @@ class PeriodicTable: MacawView {
 			drand48()
 			let group = Group(contents: [
 				Shape(form: Rect(w: elementSize.w, h: elementSize.h),
-					// stroke: Stroke(fill: Color(val: 0x1f7a7a)),
 					fill: Color.rgba(r: 0, g: 127, b: 127, a: getOpacity(element))
 				),
 				Text(text: "\(i+1)",
@@ -70,30 +69,6 @@ class PeriodicTable: MacawView {
 			node.place = data[i]
 		}
 		return elements
-	}
-
-	func sync() {
-		for animation in animations {
-			animation.stop()
-		}
-		animations.removeAll()
-		if (state % 2 == 0) {
-			for (i, node) in elements.enumerated() {
-				let element = PeriodicTable.table[i]
-				let pos = PeriodicTable.getPos(row: element.row, column: element.column)
-				node.placeVar.animate(to: pos, during: 1.0)
-			}
-        } else {
-            grid()
-        }
-		state += 1
-	}
-
-	private func grid() {
-		let data = PeriodicTable.gridData()
-		for (i, node) in elements.enumerated() {
-			node.placeVar.animate(to: data[i], during: 1.0)
-		}
 	}
 
 	private static func gridData() -> [Transform] {
@@ -144,34 +119,50 @@ class PeriodicTable: MacawView {
 	}
 
 	static func fillTable() -> [Element] {
-        let tableUrl = Bundle.main.url(forResource: "table", withExtension: "json")
-        let tableData = NSData(contentsOf: tableUrl!)
-        
-        do {
-            let elementsJson = try JSONSerialization.jsonObject(with: tableData! as Data, options: .allowFragments) as! NSArray
-            var elements: [Element] = []
-            elementsJson.forEach { json in
-                guard let dictionary = json as? [String: AnyObject] else {
-                    return
-                }
-                let newElement = Element(
-                    symbol: dictionary["symbol"] as! String,
-                    name: dictionary["name"] as! String,
-                    mass: dictionary["mass"] as! String,
-                    type: ElementType(rawValue: dictionary["type"] as! String)!,
-                    row: dictionary["row"] as! Int,
-                    column: dictionary["column"] as! Int
-                )
-                elements.append(newElement)
-            }
-            return elements
-        } catch {
-            return []
-        }
+		let tableUrl = Bundle.main.url(forResource: "table", withExtension: "json")
+		let tableData = NSData(contentsOf: tableUrl!)
+
+		do {
+			let elementsJson = try JSONSerialization.jsonObject(with: tableData! as Data, options: .allowFragments) as! NSArray
+			var elements: [Element] = []
+			elementsJson.forEach { json in
+				guard let dictionary = json as? [String: AnyObject] else {
+					return
+				}
+				let newElement = Element(
+					symbol: dictionary["symbol"] as! String,
+					name: dictionary["name"] as! String,
+					mass: dictionary["mass"] as! String,
+					type: ElementType(rawValue: dictionary["type"] as! String)!,
+					row: dictionary["row"] as! Int,
+					column: dictionary["column"] as! Int
+				)
+				elements.append(newElement)
+			}
+			return elements
+		} catch {
+			return []
+		}
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		sync()
+		for animation in animations {
+			animation.stop()
+		}
+		animations.removeAll()
+		if (showTable) {
+			for (i, node) in elements.enumerated() {
+				let element = PeriodicTable.table[i]
+				let pos = PeriodicTable.getPos(row: element.row, column: element.column)
+				node.placeVar.animate(to: pos, during: 1.0)
+			}
+		} else {
+			let data = PeriodicTable.gridData()
+			for (i, node) in elements.enumerated() {
+				node.placeVar.animate(to: data[i], during: 1.0)
+			}
+		}
+		showTable = !showTable
 	}
 
 	static func getOpacity(_ element: Element) -> Double {
