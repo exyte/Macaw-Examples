@@ -5,9 +5,9 @@ Macaw Examples is a place where you can find various usages of [Macaw](https://g
 ## Launching Example
 
 * clone the repo `git@github.com:exyte/Macaw-Examples.git`
-* open terminal and run cd <MacawExamplesRepo>/{ExampleName}/
-* run pod install to install all dependencies
-* run open {ExampleName}.xcworkspace/ to open project in the Xcode
+* open terminal and run `cd <MacawExamplesRepo>/{ExampleName}/`
+* run `pod install` to install all dependencies
+* run `open {ExampleName}.xcworkspace/` to open project in the Xcode
 
 ## Examples
 
