@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  TestExample
-//
-//  Created by Julia Bulantseva on 11/10/16.
-//  Copyright © 2016 Julia Bulantseva. All rights reserved.
-//
 
 import UIKit
 import Macaw
@@ -48,14 +41,15 @@ class BestScoreController: UIViewController {
        // }
         
         //Color(val: 0xf442f1)
-        let rect = Shape( form: Rect(x: 30, y: 50, w: 300, h: 150), fill: Color.white)
+        let rect = Shape( form: Rect(x: 2, y: 0, w: 300, h: 290), fill: Color.white)
         let anim = rect.placeVar.animation ({ t -> Transform in
-            return Transform().move(dx: 100.0 * t, dy: 100.0 * t)//.scale(sx:(2.0 - t), sy: (2.0 - t ))
-        }, during: 10.0)
+            return Transform.move(dx: 200.0 * t, dy: 0.0) //move(dx: 100.0 * t, dy: 100.0 * t)//
+            //return Transform().scale(sx:(1.0 - t), sy: 1) //move(dx: 100.0 * t, dy: 100.0 * t)//
+        }, during: 1.0, delay: 1.0)
         anim.play()
         self.shapes.append(rect)
         
-        self.macawView?.node = self.shapes.group()
+        self.macawView?.node = self.shapes.group(place: .move(dx: 30, dy: 0))
         
         
         /*

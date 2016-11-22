@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  TestExample
-//
-//  Created by Julia Bulantseva on 11/10/16.
-//  Copyright © 2016 Julia Bulantseva. All rights reserved.
-//
 
 import UIKit
 import Macaw

@@ -11,6 +11,7 @@
 		72E228DF1DDD7475008E7B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E228DE1DDD7475008E7B5B /* AppDelegate.swift */; };
 		72E228E61DDD7475008E7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E228E51DDD7475008E7B5B /* Assets.xcassets */; };
 		72E228E91DDD7475008E7B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E228E71DDD7475008E7B5B /* LaunchScreen.storyboard */; };
+		72FFAC801DE46A4500665CC7 /* DailySummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFAC7F1DE46A4500665CC7 /* DailySummaryController.swift */; };
 		B097DA001DE420C7000062E4 /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B097D9FF1DE420C7000062E4 /* CubicCurveAlgorithm.swift */; };
 		B097DA021DE420DD000062E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B097DA011DE420DD000062E4 /* Main.storyboard */; };
 		B0C856181DE427B8004C74A3 /* BestScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C856161DE427B8004C74A3 /* BestScoreController.swift */; };
@@ -26,6 +27,7 @@
 		72E228E51DDD7475008E7B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E228E81DDD7475008E7B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E228EA1DDD7475008E7B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FFAC7F1DE46A4500665CC7 /* DailySummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySummaryController.swift; sourceTree = "<group>"; };
 		B097D9FF1DE420C7000062E4 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		B097DA011DE420DD000062E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0C856161DE427B8004C74A3 /* BestScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestScoreController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				72E228E71DDD7475008E7B5B /* LaunchScreen.storyboard */,
 				72E228E51DDD7475008E7B5B /* Assets.xcassets */,
 				72E228EA1DDD7475008E7B5B /* Info.plist */,
+				72FFAC7F1DE46A4500665CC7 /* DailySummaryController.swift */,
 			);
 			path = HealthStat;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				B097DA001DE420C7000062E4 /* CubicCurveAlgorithm.swift in Sources */,
 				B0C856191DE427B8004C74A3 /* RunningLevelController.swift in Sources */,
+				72FFAC801DE46A4500665CC7 /* DailySummaryController.swift in Sources */,
 				B0C856181DE427B8004C74A3 /* BestScoreController.swift in Sources */,
 				72E228DF1DDD7475008E7B5B /* AppDelegate.swift in Sources */,
 				B0C8561B1DE42D07004C74A3 /* TotalStepsController.swift in Sources */,
