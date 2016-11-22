@@ -9,7 +9,7 @@
 import UIKit
 import Macaw
 
-class ViewController: UIViewController {
+class TotalStepsController: UIViewController {
     
     @IBOutlet weak var macawView: MacawView?
     var shapes: [Shape] = []
@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         var x = 30.0
         var y = 170.0
         
-        
         for _ in 0...6 {
             x = x + 30
             y = 170.0
@@ -38,17 +37,24 @@ class ViewController: UIViewController {
             }
         }
         
-        macawView?.node = [shapes.group(), text].group()
+        let g = [shapes.group(), text].group()
+        g.place = .move(dx: 20, dy: 60)
+        macawView?.node = g
         
-        for i in 0...6 {
-            let count = self.a[i]
-            let column = i*10
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)*0.1) {
-                for j in column...column+count-1 {
-                    self.shapes[j].fill = self.colors[j%10]
-                }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            for i in 0...6 {
+                let count = self.a[i]
+                let column = i*10
                 
-                self.macawView?.node = [self.shapes.group(), text].group()
+                DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)*0.1) {
+                    for j in column...column+count-1 {
+                        self.shapes[j].fill = self.colors[j%10]
+                    }
+                    
+                    let g = [self.shapes.group(), text].group()
+                    g.place = .move(dx: 20, dy: 60)
+                    self.macawView?.node = g
+                }
             }
         }
     }

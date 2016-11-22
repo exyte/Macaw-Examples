@@ -9,53 +9,28 @@
 /* Begin PBXBuildFile section */
 		10E3D2228D87C77A1485DB20 /* Pods_HealthStat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8A09E5FAA2F971819F60A5 /* Pods_HealthStat.framework */; };
 		72E228DF1DDD7475008E7B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E228DE1DDD7475008E7B5B /* AppDelegate.swift */; };
-		72E228E11DDD7475008E7B5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E228E01DDD7475008E7B5B /* ViewController.swift */; };
 		72E228E61DDD7475008E7B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E228E51DDD7475008E7B5B /* Assets.xcassets */; };
 		72E228E91DDD7475008E7B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E228E71DDD7475008E7B5B /* LaunchScreen.storyboard */; };
-		72E228F41DDD7475008E7B5B /* HealthStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E228F31DDD7475008E7B5B /* HealthStatTests.swift */; };
-		72E228FF1DDD7475008E7B5B /* HealthStatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E228FE1DDD7475008E7B5B /* HealthStatUITests.swift */; };
-		72E2290D1DDD749B008E7B5B /* RunningLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2290C1DDD749B008E7B5B /* RunningLevel.swift */; };
-		72E2290F1DDD74AD008E7B5B /* BestScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2290E1DDD74AD008E7B5B /* BestScore.swift */; };
-		72E229111DDD74B3008E7B5B /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E229101DDD74B3008E7B5B /* CubicCurveAlgorithm.swift */; };
-		72E229141DDD74E0008E7B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E229131DDD74E0008E7B5B /* Main.storyboard */; };
+		B097DA001DE420C7000062E4 /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B097D9FF1DE420C7000062E4 /* CubicCurveAlgorithm.swift */; };
+		B097DA021DE420DD000062E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B097DA011DE420DD000062E4 /* Main.storyboard */; };
+		B0C856181DE427B8004C74A3 /* BestScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C856161DE427B8004C74A3 /* BestScoreController.swift */; };
+		B0C856191DE427B8004C74A3 /* RunningLevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C856171DE427B8004C74A3 /* RunningLevelController.swift */; };
+		B0C8561B1DE42D07004C74A3 /* TotalStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8561A1DE42D07004C74A3 /* TotalStepsController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		72E228F01DDD7475008E7B5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72E228D31DDD7475008E7B5B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72E228DA1DDD7475008E7B5B;
-			remoteInfo = HealthStat;
-		};
-		72E228FB1DDD7475008E7B5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72E228D31DDD7475008E7B5B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72E228DA1DDD7475008E7B5B;
-			remoteInfo = HealthStat;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3ACBFFB822BA489F202823D2 /* Pods-HealthStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat.debug.xcconfig"; sourceTree = "<group>"; };
 		3E818EE7B940249E0FF6BD67 /* Pods-HealthStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat.release.xcconfig"; sourceTree = "<group>"; };
 		72E228DB1DDD7475008E7B5B /* HealthStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E228DE1DDD7475008E7B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72E228E01DDD7475008E7B5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72E228E51DDD7475008E7B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E228E81DDD7475008E7B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E228EA1DDD7475008E7B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72E228EF1DDD7475008E7B5B /* HealthStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72E228F31DDD7475008E7B5B /* HealthStatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatTests.swift; sourceTree = "<group>"; };
-		72E228F51DDD7475008E7B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72E228FA1DDD7475008E7B5B /* HealthStatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthStatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72E228FE1DDD7475008E7B5B /* HealthStatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatUITests.swift; sourceTree = "<group>"; };
-		72E229001DDD7475008E7B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72E2290C1DDD749B008E7B5B /* RunningLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunningLevel.swift; path = ../../../../Desktop/TestExample/TestExample/RunningLevel.swift; sourceTree = "<group>"; };
-		72E2290E1DDD74AD008E7B5B /* BestScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BestScore.swift; path = ../../../../Desktop/TestExample/TestExample/BestScore.swift; sourceTree = "<group>"; };
-		72E229101DDD74B3008E7B5B /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CubicCurveAlgorithm.swift; path = ../../../../Desktop/TestExample/TestExample/CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
-		72E229121DDD74E0008E7B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B097D9FF1DE420C7000062E4 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
+		B097DA011DE420DD000062E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B0C856161DE427B8004C74A3 /* BestScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestScoreController.swift; sourceTree = "<group>"; };
+		B0C856171DE427B8004C74A3 /* RunningLevelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningLevelController.swift; sourceTree = "<group>"; };
+		B0C8561A1DE42D07004C74A3 /* TotalStepsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalStepsController.swift; sourceTree = "<group>"; };
 		ED8A09E5FAA2F971819F60A5 /* Pods_HealthStat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthStat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,20 +43,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72E228EC1DDD7475008E7B5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72E228F71DDD7475008E7B5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,8 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				72E228DD1DDD7475008E7B5B /* HealthStat */,
-				72E228F21DDD7475008E7B5B /* HealthStatTests */,
-				72E228FD1DDD7475008E7B5B /* HealthStatUITests */,
 				72E228DC1DDD7475008E7B5B /* Products */,
 				7993914983B2CC4A03236101 /* Pods */,
 				BEECA859F8170E5C4C0278BB /* Frameworks */,
@@ -101,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				72E228DB1DDD7475008E7B5B /* HealthStat.app */,
-				72E228EF1DDD7475008E7B5B /* HealthStatTests.xctest */,
-				72E228FA1DDD7475008E7B5B /* HealthStatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,35 +67,17 @@
 		72E228DD1DDD7475008E7B5B /* HealthStat */ = {
 			isa = PBXGroup;
 			children = (
-				72E229131DDD74E0008E7B5B /* Main.storyboard */,
-				72E229101DDD74B3008E7B5B /* CubicCurveAlgorithm.swift */,
-				72E2290E1DDD74AD008E7B5B /* BestScore.swift */,
-				72E2290C1DDD749B008E7B5B /* RunningLevel.swift */,
+				B097D9FF1DE420C7000062E4 /* CubicCurveAlgorithm.swift */,
+				B0C8561A1DE42D07004C74A3 /* TotalStepsController.swift */,
+				B0C856161DE427B8004C74A3 /* BestScoreController.swift */,
+				B0C856171DE427B8004C74A3 /* RunningLevelController.swift */,
 				72E228DE1DDD7475008E7B5B /* AppDelegate.swift */,
-				72E228E01DDD7475008E7B5B /* ViewController.swift */,
-				72E228E51DDD7475008E7B5B /* Assets.xcassets */,
+				B097DA011DE420DD000062E4 /* Main.storyboard */,
 				72E228E71DDD7475008E7B5B /* LaunchScreen.storyboard */,
+				72E228E51DDD7475008E7B5B /* Assets.xcassets */,
 				72E228EA1DDD7475008E7B5B /* Info.plist */,
 			);
 			path = HealthStat;
-			sourceTree = "<group>";
-		};
-		72E228F21DDD7475008E7B5B /* HealthStatTests */ = {
-			isa = PBXGroup;
-			children = (
-				72E228F31DDD7475008E7B5B /* HealthStatTests.swift */,
-				72E228F51DDD7475008E7B5B /* Info.plist */,
-			);
-			path = HealthStatTests;
-			sourceTree = "<group>";
-		};
-		72E228FD1DDD7475008E7B5B /* HealthStatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				72E228FE1DDD7475008E7B5B /* HealthStatUITests.swift */,
-				72E229001DDD7475008E7B5B /* Info.plist */,
-			);
-			path = HealthStatUITests;
 			sourceTree = "<group>";
 		};
 		7993914983B2CC4A03236101 /* Pods */ = {
@@ -181,42 +120,6 @@
 			productReference = 72E228DB1DDD7475008E7B5B /* HealthStat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		72E228EE1DDD7475008E7B5B /* HealthStatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72E229061DDD7475008E7B5B /* Build configuration list for PBXNativeTarget "HealthStatTests" */;
-			buildPhases = (
-				72E228EB1DDD7475008E7B5B /* Sources */,
-				72E228EC1DDD7475008E7B5B /* Frameworks */,
-				72E228ED1DDD7475008E7B5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72E228F11DDD7475008E7B5B /* PBXTargetDependency */,
-			);
-			name = HealthStatTests;
-			productName = HealthStatTests;
-			productReference = 72E228EF1DDD7475008E7B5B /* HealthStatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		72E228F91DDD7475008E7B5B /* HealthStatUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72E229091DDD7475008E7B5B /* Build configuration list for PBXNativeTarget "HealthStatUITests" */;
-			buildPhases = (
-				72E228F61DDD7475008E7B5B /* Sources */,
-				72E228F71DDD7475008E7B5B /* Frameworks */,
-				72E228F81DDD7475008E7B5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72E228FC1DDD7475008E7B5B /* PBXTargetDependency */,
-			);
-			name = HealthStatUITests;
-			productName = HealthStatUITests;
-			productReference = 72E228FA1DDD7475008E7B5B /* HealthStatUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,16 +133,6 @@
 					72E228DA1DDD7475008E7B5B = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
-					};
-					72E228EE1DDD7475008E7B5B = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 72E228DA1DDD7475008E7B5B;
-					};
-					72E228F91DDD7475008E7B5B = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 72E228DA1DDD7475008E7B5B;
 					};
 				};
 			};
@@ -257,8 +150,6 @@
 			projectRoot = "";
 			targets = (
 				72E228DA1DDD7475008E7B5B /* HealthStat */,
-				72E228EE1DDD7475008E7B5B /* HealthStatTests */,
-				72E228F91DDD7475008E7B5B /* HealthStatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,23 +159,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E229141DDD74E0008E7B5B /* Main.storyboard in Resources */,
+				B097DA021DE420DD000062E4 /* Main.storyboard in Resources */,
 				72E228E91DDD7475008E7B5B /* LaunchScreen.storyboard in Resources */,
 				72E228E61DDD7475008E7B5B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72E228ED1DDD7475008E7B5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72E228F81DDD7475008E7B5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,44 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E229111DDD74B3008E7B5B /* CubicCurveAlgorithm.swift in Sources */,
-				72E2290F1DDD74AD008E7B5B /* BestScore.swift in Sources */,
-				72E228E11DDD7475008E7B5B /* ViewController.swift in Sources */,
+				B097DA001DE420C7000062E4 /* CubicCurveAlgorithm.swift in Sources */,
+				B0C856191DE427B8004C74A3 /* RunningLevelController.swift in Sources */,
+				B0C856181DE427B8004C74A3 /* BestScoreController.swift in Sources */,
 				72E228DF1DDD7475008E7B5B /* AppDelegate.swift in Sources */,
-				72E2290D1DDD749B008E7B5B /* RunningLevel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72E228EB1DDD7475008E7B5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72E228F41DDD7475008E7B5B /* HealthStatTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72E228F61DDD7475008E7B5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72E228FF1DDD7475008E7B5B /* HealthStatUITests.swift in Sources */,
+				B0C8561B1DE42D07004C74A3 /* TotalStepsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		72E228F11DDD7475008E7B5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72E228DA1DDD7475008E7B5B /* HealthStat */;
-			targetProxy = 72E228F01DDD7475008E7B5B /* PBXContainerItemProxy */;
-		};
-		72E228FC1DDD7475008E7B5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72E228DA1DDD7475008E7B5B /* HealthStat */;
-			targetProxy = 72E228FB1DDD7475008E7B5B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		72E228E71DDD7475008E7B5B /* LaunchScreen.storyboard */ = {
@@ -389,15 +237,6 @@
 				72E228E81DDD7475008E7B5B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		72E229131DDD74E0008E7B5B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72E229121DDD74E0008E7B5B /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../../../../Desktop/TestExample/TestExample;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -503,9 +342,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HealthStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Test.HealthStat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.HealthStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -516,63 +356,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HealthStat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Test.HealthStat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.HealthStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		72E229071DDD7475008E7B5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HealthStatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Test.HealthStatTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthStat.app/HealthStat";
-			};
-			name = Debug;
-		};
-		72E229081DDD7475008E7B5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HealthStatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Test.HealthStatTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthStat.app/HealthStat";
-			};
-			name = Release;
-		};
-		72E2290A1DDD7475008E7B5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = HealthStatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Test.HealthStatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = HealthStat;
-			};
-			name = Debug;
-		};
-		72E2290B1DDD7475008E7B5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = HealthStatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Test.HealthStatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = HealthStat;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -593,24 +380,6 @@
 			buildConfigurations = (
 				72E229041DDD7475008E7B5B /* Debug */,
 				72E229051DDD7475008E7B5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		72E229061DDD7475008E7B5B /* Build configuration list for PBXNativeTarget "HealthStatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72E229071DDD7475008E7B5B /* Debug */,
-				72E229081DDD7475008E7B5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		72E229091DDD7475008E7B5B /* Build configuration list for PBXNativeTarget "HealthStatUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72E2290A1DDD7475008E7B5B /* Debug */,
-				72E2290B1DDD7475008E7B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
