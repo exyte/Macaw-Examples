@@ -2,10 +2,6 @@
 
 Macaw Examples is a place where you can find various usages of [Macaw](https://github.com/exyte/macaw) library.
 
-## Requirements
-* iOS 8.0+ / Mac OS X 10.9+
-* Xcode 8.0+
-
 ## Launching Example
 
 * clone the repo `git@github.com:exyte/Macaw-Examples.git`
@@ -29,7 +25,13 @@ Do you like chemistry? An iPad application shows full power of Macaw: affine tra
 
 ### HealthStat
 
-Activity Monitor App Concept shows total of steps, running level and daily summary.
+Activity Monitor App Concept shows total of steps, running level and daily summary. An application is in the early development stage and using macaw development branch [content_animation](https://github.com/exyte/macaw/tree/content_animation).
+
+<img src="https://www.dropbox.com/s/hyr2j272zxpjt7l/examples-health.png?dl=1" width="600">
+
+## Requirements
+* iOS 8.0+ / Mac OS X 10.9+
+* Xcode 8.0+
 
 ## Author
 
