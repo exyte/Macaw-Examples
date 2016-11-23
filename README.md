@@ -1,6 +1,6 @@
 # Macaw-Examples
 
-Macaw Examples is a place where you can find various usages of [Macaw](https://github.com/exyte/macaw) library.
+Macaw Examples is a place where you can find various usages of the [Macaw](https://github.com/exyte/macaw) library.
 
 ## Launching Example
 
@@ -13,19 +13,19 @@ Macaw Examples is a place where you can find various usages of [Macaw](https://g
 
 ### GettingStarted
 
-A simple application with animated bar charts. Step by step tutorial is presented on [Getting Started](https://github.com/exyte/Macaw/wiki/Getting-started) wiki page.
+A simple application with animated bar charts. Step by step tutorial is presented on the [Getting Started](https://github.com/exyte/Macaw/wiki/Getting-started) wiki page.
 
 <img src="https://www.dropbox.com/s/766wpt4tx6bf0ph/howto-animation-1.gif?dl=1" width="460">
 
 ### PeriodicTable
 
-Do you like chemistry? An iPad application shows full power of Macaw: affine transformations, user events, animation and various effects.
+Do you like chemistry? This iPad application shows full power of Macaw: affine transformations, user events, animation and various effects.
 
 <img src="https://www.dropbox.com/s/b6lspzzqa80ielk/periodic-ipad.gif?dl=1" width="600">
 
 ### HealthStat
 
-Activity Monitor App Concept shows total of steps, running level and daily summary. An application is in the early development stage and using macaw development branch [content_animation](https://github.com/exyte/macaw/tree/content_animation).
+Activity Monitor app concept shows number of steps, running level and daily summary. The application is in the early development stage and is using the macaw development branch feature [content_animation](https://github.com/exyte/macaw/tree/content_animation).
 
 <img src="https://www.dropbox.com/s/hyr2j272zxpjt7l/examples-health.png?dl=1" width="600">
 
