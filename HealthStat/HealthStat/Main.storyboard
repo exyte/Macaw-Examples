@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -165,17 +164,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bno-cg-EmL" customClass="MacawView" customModule="Macaw">
-                                <rect key="frame" x="67" y="82" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bno-cg-EmL" customClass="MacawView" customModule="Macaw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.37639731869999998" green="0.24950356039999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bno-cg-EmL" firstAttribute="leading" secondItem="0iJ-sf-bjp" secondAttribute="leadingMargin" id="JRa-kx-4uM"/>
-                            <constraint firstItem="bno-cg-EmL" firstAttribute="top" secondItem="jdW-kv-f6v" secondAttribute="bottom" id="PgE-cZ-WrZ"/>
-                            <constraint firstItem="Zqq-5Q-kLs" firstAttribute="top" secondItem="bno-cg-EmL" secondAttribute="bottom" id="htB-gF-fVr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bno-cg-EmL" secondAttribute="trailing" id="y3u-a4-Ck2"/>
+                            <constraint firstItem="bno-cg-EmL" firstAttribute="leading" secondItem="0iJ-sf-bjp" secondAttribute="leading" id="NzH-t4-9mO"/>
+                            <constraint firstAttribute="trailing" secondItem="bno-cg-EmL" secondAttribute="trailing" id="aBN-pS-dPH"/>
+                            <constraint firstItem="Zqq-5Q-kLs" firstAttribute="top" secondItem="bno-cg-EmL" secondAttribute="bottom" id="dpZ-GF-Zan"/>
+                            <constraint firstItem="bno-cg-EmL" firstAttribute="top" secondItem="jdW-kv-f6v" secondAttribute="bottom" id="qCq-KH-zLD"/>
                         </constraints>
                     </view>
                     <connections>

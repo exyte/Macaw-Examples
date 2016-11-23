@@ -19,8 +19,6 @@ class BestScoreController: UIViewController {
         let x = 10.0
         let y = 160.0
         //var tes = 0.0
-        self.shapes.append(Line(x1: 10, y1: 300, x2: 285, y2: 300).stroke())
-        self.shapes.append(Line(x1: 10, y1: 100, x2: 10, y2: 300).stroke())
 
         let controlPoints = self.cubicCurve.controlPointsFromPoints(dataPoints: dots1)
         //for _ in 0...2 {
@@ -41,13 +39,16 @@ class BestScoreController: UIViewController {
        // }
         
         //Color(val: 0xf442f1)
-        let rect = Shape( form: Rect(x: 2, y: 0, w: 300, h: 290), fill: Color.white)
+        let rect = Shape( form: Rect(x: 11, y: 0, w: 300, h: 290), fill: Color.white)
         let anim = rect.placeVar.animation ({ t -> Transform in
             return Transform.move(dx: 200.0 * t, dy: 0.0) //move(dx: 100.0 * t, dy: 100.0 * t)//
             //return Transform().scale(sx:(1.0 - t), sy: 1) //move(dx: 100.0 * t, dy: 100.0 * t)//
         }, during: 1.0, delay: 1.0)
         anim.play()
         self.shapes.append(rect)
+        
+        self.shapes.append(Line(x1: 10, y1: 300, x2: 285, y2: 300).stroke(fill: Color.black))
+        self.shapes.append(Line(x1: 10, y1: 100, x2: 10, y2: 300).stroke(fill: Color.black))
         
         self.macawView?.node = self.shapes.group(place: .move(dx: 30, dy: 0))
         
