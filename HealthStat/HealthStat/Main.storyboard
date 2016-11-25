@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G5G-Wq-bTm">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G5G-Wq-bTm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -99,15 +99,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-Zj-YVH" customClass="MacawView" customModule="Macaw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.25098039215686274" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.28235294117647058" green="0.13333333333333333" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="rbO-Zj-YVH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0M0-ai-sYj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rbO-Zj-YVH" secondAttribute="bottom" id="4Z4-Sa-Ykx"/>
                             <constraint firstItem="rbO-Zj-YVH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RVW-zV-W2i"/>
+                            <constraint firstItem="rbO-Zj-YVH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZFd-nh-V8h"/>
                             <constraint firstAttribute="trailing" secondItem="rbO-Zj-YVH" secondAttribute="trailing" id="iou-7y-7bd"/>
                         </constraints>
                     </view>
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="509"/>
+            <point key="canvasLocation" x="-964" y="508.69565217391306"/>
         </scene>
         <!--Best Score Controller-->
         <scene sceneID="LJz-md-gfW">

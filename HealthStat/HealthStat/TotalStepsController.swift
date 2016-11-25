@@ -1,70 +1,102 @@
-//
-//  ViewController.swift
-//  TestExample
-//
-//  Created by Julia Bulantseva on 11/10/16.
-//  Copyright © 2016 Julia Bulantseva. All rights reserved.
-//
-
 import UIKit
 import Macaw
 
-class TotalStepsController: UIViewController {
+open class TotalStepsController: UIViewController {
+    
+    // MARK: Outlets
     
     @IBOutlet weak var macawView: MacawView?
-    var shapes: [Shape] = []
-    var a = [1, 2, 2, 3, 10, 6, 4]
-    let colors = [Color(val: 0x99FFFF), Color(val: 0xCCFFFF), Color(val: 0xCCFFFF), Color(val: 0xFFCCFF), Color(val: 0xFF99FF), Color(val: 0xFF66FF), Color(val: 0xFF66FF), Color(val: 0xFF66FF), Color(val: 0xFF33FF), Color(val: 0xFF00FF)]
     
-    override func viewDidLoad() {
+    // MARK: Private Properties
+    
+    private let barsValues = [3, 4, 6, 10, 5]
+    private let barsCount = 5
+    private let barSegmentsCount = 10
+    private let barsSpacing = 20
+    private let segmentWidth = 40
+    private let segmentHeight = 10
+    private let segmentsSpacing = 10
+    
+    private let emptyBarSegmentColor = Color.rgba(r: 255, g: 255, b: 255, a: 0.1)
+    private let barSegmentColors = [
+        0x359DDC,
+        0x5984C7,
+        0x5F81C5,
+        0x796EB6,
+        0xA3519E,
+        0xB54493,
+        0xC13C8D,
+        0xBF3D8E,
+        0xCC3385,
+        0xE42479
+    ].map {
+        Color(val: $0)
+    }
+    
+    // MARK: Load
+    
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
-        let text = Text(text: "Total of steps", font: Font(name: "Serif", size: 24), fill: Color(val: 0xFFFFFF))
-        text.place = .move(dx: 100, dy: 10)
+        let viewWidth = macawView?.bounds.width ?? 0
+        let viewCenterX = Double(viewWidth / 2)
         
-        var shape = Shape( form: RoundRect( rect: Rect(x: 30, y: 50, w: 50, h: 10), rx: 5, ry: 5), fill: Color(val: 0xfcc07c))
-        var x = 30.0
-        var y = 170.0
+        let text = Text(
+            text: "Total of steps",
+            font: Font(name: "Serif", size: 24),
+            fill: Color(val: 0xFFFFFF)
+        )
+        text.align = .mid
+        text.place = .move(dx: viewCenterX, dy: 30)
         
-        for _ in 0...6 {
-            x = x + 30
-            y = 170.0
-            for _ in 0...9 {
-                let color4 = Color.rgba(r: 138, g: 147, b: 219, a: 0.5)
-                shape = Shape( form: RoundRect( rect: Rect(x: x, y: y, w: 20, h: 5), rx: 5, ry: 5), fill: color4)
-                self.shapes.append(shape)
-                y = y - 10
-            }
-        }
+        let barsWidth = Double((segmentWidth * barsCount) + (barsSpacing * (barsCount - 1)))
+        let barsCenterX = viewCenterX - barsWidth / 2
         
-        let g = [shapes.group(), text].group()
-        g.place = .move(dx: 20, dy: 60)
-        macawView?.node = g
+        let barsBackgroundGroup = createBars(centerX: barsCenterX, isEmpty: true)
+        let barsGroup = createBars(centerX: barsCenterX, isEmpty: false)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            for i in 0...6 {
-                let count = self.a[i]
-                let column = i*10
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)*0.1) {
-                    for j in column...column+count-1 {
-                        self.shapes[j].fill = self.colors[j%10]
+        macawView?.node = [text, barsGroup, barsBackgroundGroup].group()
+        
+        barsGroup.contents.enumerated().forEach { nodeIndex, node in
+            if let barGroup = node as? Group {
+                let barSize = self.barsValues[nodeIndex]
+                barGroup.contents.enumerated().forEach { barNodeIndex, barNode in
+                    if let segmentShape = barNode as? Shape, barNodeIndex <= barSize - 1 {
+                        let delay = Double(barNodeIndex) * 0.05 + Double(nodeIndex) * 0.2
+                        segmentShape.opacityVar.animation(from: 0, to: 1, during: 0.2, delay: delay).play()
                     }
-                    
-                    let g = [self.shapes.group(), text].group()
-                    g.place = .move(dx: 20, dy: 60)
-                    self.macawView?.node = g
                 }
             }
         }
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func createBars(centerX: Double, isEmpty: Bool) -> Group {
+        let barsGroup = Group()
+        barsGroup.place = Transform.move(dx: centerX, dy: 90)
+        for barIndex in 0...barsCount - 1 {
+            let barGroup = Group()
+            barGroup.place = Transform.move(dx: Double((barsSpacing + segmentWidth) * barIndex), dy: 0)
+            for segmentIndex in 0...barSegmentsCount - 1 {
+                let segmentShape = Shape(
+                    form: RoundRect(
+                        rect: Rect(
+                            x: 0,
+                            y: Double((segmentHeight + segmentsSpacing) * segmentIndex),
+                            w: Double(segmentWidth),
+                            h: Double(segmentHeight)
+                        ),
+                        rx: Double(segmentHeight),
+                        ry: Double(segmentHeight)
+                    ),
+                    fill: isEmpty ? emptyBarSegmentColor : barSegmentColors[segmentIndex],
+                    opacity: isEmpty ? 1 : 0
+                )
+                barGroup.contents.append(segmentShape)
+            }
+            barGroup.contents.reverse()
+            barsGroup.contents.append(barGroup)
+        }
+        return barsGroup
     }
     
-    
 }
-
