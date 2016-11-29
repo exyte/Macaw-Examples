@@ -20,7 +20,9 @@ class CubicCurveAlgorithm
     private var firstControlPoints: [CGPoint?] = []
     private var secondControlPoints: [CGPoint?] = []
     
-    func controlPointsFromPoints(dataPoints: [CGPoint]) -> [CubicCurveSegment] {
+    func controlPointsFromPoints(dataPoints: [CGPoint]) -> [CubicCurveSegment] {        
+        firstControlPoints.removeAll()
+        secondControlPoints.removeAll()
         
         //Number of Segments
         let count = dataPoints.count - 1

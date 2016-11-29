@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G5G-Wq-bTm">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l5t-bB-SjE">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,214 +9,114 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Health Stat-->
-        <scene sceneID="nT9-cG-zQa">
+        <!--Activity Monitor View Controller-->
+        <scene sceneID="AK2-qP-JJC">
             <objects>
-                <navigationController title="Health Stat" id="G5G-Wq-bTm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2b7-2z-Q7q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="hH9-GQ-Xmf" kind="relationship" relationship="rootViewController" id="qK1-GS-BeW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fca-12-mDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1126" y="-260"/>
-        </scene>
-        <!--MainController-->
-        <scene sceneID="6Xz-ad-enO">
-            <objects>
-                <viewController id="hH9-GQ-Xmf" userLabel="MainController" sceneMemberID="viewController">
+                <viewController title="Activity Monitor View Controller" id="l5t-bB-SjE" customClass="ActivityMonitorViewController" customModule="HealthStat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Mvy-b0-etY"/>
-                        <viewControllerLayoutGuide type="bottom" id="nQq-tz-Csc"/>
+                        <viewControllerLayoutGuide type="top" id="b7D-mI-96D"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hf9-iD-Ywk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4lr-zt-5n3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="pMD-CA-07Z">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2c-ZM-cdJ">
-                                <rect key="frame" x="141" y="80" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Total of steps">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Tbp-of-jbY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msg-kT-KBg">
-                                <rect key="frame" x="141" y="110" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Running level">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2cE-NF-FpH" kind="show" id="JEy-w5-Qaz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs1-gs-wBx">
-                                <rect key="frame" x="150" y="140" width="73" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Best score">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Oqn-5j-HkR" kind="show" id="QTO-Gv-Cxk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-O9-Lvx">
-                                <rect key="frame" x="141" y="165" width="101" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Daily summary">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eEX-ob-6kI" kind="show" id="6JT-By-avz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.37647058820000001" green="0.25098039220000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="eJO-iJ-ltP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HT8-87-7nT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-287" y="-260"/>
-        </scene>
-        <!--Total Steps Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="TotalStepsController" customModule="HealthStat" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-Zj-YVH" customClass="MacawView" customModule="Macaw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aM-i3-TIM">
+                                <rect key="frame" x="0.0" y="20" width="512" height="374"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3U-QI-Xrp" customClass="BestScoreView" customModule="HealthStat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="512" height="374"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.11372549019607843" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="H3U-QI-Xrp" secondAttribute="bottom" id="2xO-UK-Ql2"/>
+                                    <constraint firstAttribute="trailing" secondItem="H3U-QI-Xrp" secondAttribute="trailing" id="5qq-Du-pZz"/>
+                                    <constraint firstItem="H3U-QI-Xrp" firstAttribute="leading" secondItem="3aM-i3-TIM" secondAttribute="leading" id="JCP-Wu-ZsZ"/>
+                                    <constraint firstItem="H3U-QI-Xrp" firstAttribute="top" secondItem="3aM-i3-TIM" secondAttribute="top" id="ZkX-fJ-JiX"/>
+                                </constraints>
                             </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.28235294117647058" green="0.13333333333333333" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rbO-Zj-YVH" secondAttribute="bottom" id="4Z4-Sa-Ykx"/>
-                            <constraint firstItem="rbO-Zj-YVH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RVW-zV-W2i"/>
-                            <constraint firstItem="rbO-Zj-YVH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZFd-nh-V8h"/>
-                            <constraint firstAttribute="trailing" secondItem="rbO-Zj-YVH" secondAttribute="trailing" id="iou-7y-7bd"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="macawView" destination="rbO-Zj-YVH" id="MI4-gJ-qnq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-964" y="508.69565217391306"/>
-        </scene>
-        <!--Best Score Controller-->
-        <scene sceneID="LJz-md-gfW">
-            <objects>
-                <viewController id="Oqn-5j-HkR" customClass="BestScoreController" customModule="HealthStat" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J7V-hK-jVk"/>
-                        <viewControllerLayoutGuide type="bottom" id="oGG-W2-Muc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nlT-F3-slQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yns-EN-M1S" customClass="MacawView" customModule="Macaw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-NB-Is4">
+                                <rect key="frame" x="512" y="20" width="512" height="374"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-fM-iAb" customClass="TotalOfStepsView" customModule="HealthStat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="512" height="374"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.13333333333333333" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DC2-fM-iAb" secondAttribute="trailing" id="4Z0-zQ-WVr"/>
+                                    <constraint firstItem="DC2-fM-iAb" firstAttribute="top" secondItem="L8A-NB-Is4" secondAttribute="top" id="Exa-hh-Zlu"/>
+                                    <constraint firstItem="DC2-fM-iAb" firstAttribute="leading" secondItem="L8A-NB-Is4" secondAttribute="leading" id="N1a-jE-S3f"/>
+                                    <constraint firstAttribute="bottom" secondItem="DC2-fM-iAb" secondAttribute="bottom" id="QyU-eb-49f"/>
+                                </constraints>
                             </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="yns-EN-M1S" secondAttribute="trailing" id="0nz-cY-BZy"/>
-                            <constraint firstItem="oGG-W2-Muc" firstAttribute="top" secondItem="yns-EN-M1S" secondAttribute="bottom" id="X4c-TG-ylA"/>
-                            <constraint firstItem="yns-EN-M1S" firstAttribute="leading" secondItem="nlT-F3-slQ" secondAttribute="leading" id="hvr-2q-EKw"/>
-                            <constraint firstItem="yns-EN-M1S" firstAttribute="top" secondItem="nlT-F3-slQ" secondAttribute="top" id="kYO-rS-nCE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="macawView" destination="yns-EN-M1S" id="Opl-jx-w9L"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eji-Wo-Ie5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="396" y="508.69565217391306"/>
-        </scene>
-        <!--Daily Summary Controller-->
-        <scene sceneID="AGB-6n-54O">
-            <objects>
-                <viewController id="eEX-ob-6kI" customClass="DailySummaryController" customModule="HealthStat" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jdW-kv-f6v"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zqq-5Q-kLs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0iJ-sf-bjp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bno-cg-EmL" customClass="MacawView" customModule="Macaw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" red="0.37639731869999998" green="0.24950356039999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-hq-Byh">
+                                <rect key="frame" x="0.0" y="394" width="512" height="374"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4A-3J-9DM" customClass="RunningLevelView" customModule="HealthStat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="512" height="374"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.13333333333333333" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="j4A-3J-9DM" firstAttribute="leading" secondItem="Bjf-hq-Byh" secondAttribute="leading" id="Aa3-ew-JL6"/>
+                                    <constraint firstAttribute="trailing" secondItem="j4A-3J-9DM" secondAttribute="trailing" id="ltM-LN-YQ9"/>
+                                    <constraint firstItem="j4A-3J-9DM" firstAttribute="top" secondItem="Bjf-hq-Byh" secondAttribute="top" id="nqZ-0F-rmJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="j4A-3J-9DM" secondAttribute="bottom" id="onm-vR-2pb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-BF-nCV">
+                                <rect key="frame" x="512" y="394" width="512" height="374"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tL8-iS-Dzr" customClass="DailySummaryView" customModule="HealthStat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="512" height="374"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.11372549019607843" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tL8-iS-Dzr" secondAttribute="bottom" id="Hpj-I5-Y8s"/>
+                                    <constraint firstAttribute="trailing" secondItem="tL8-iS-Dzr" secondAttribute="trailing" id="YuF-Vt-xDA"/>
+                                    <constraint firstItem="tL8-iS-Dzr" firstAttribute="top" secondItem="KPX-BF-nCV" secondAttribute="top" id="Zny-8n-uqC"/>
+                                    <constraint firstItem="tL8-iS-Dzr" firstAttribute="leading" secondItem="KPX-BF-nCV" secondAttribute="leading" id="rwW-SA-t9Y"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bno-cg-EmL" firstAttribute="leading" secondItem="0iJ-sf-bjp" secondAttribute="leading" id="NzH-t4-9mO"/>
-                            <constraint firstAttribute="trailing" secondItem="bno-cg-EmL" secondAttribute="trailing" id="aBN-pS-dPH"/>
-                            <constraint firstItem="Zqq-5Q-kLs" firstAttribute="top" secondItem="bno-cg-EmL" secondAttribute="bottom" id="dpZ-GF-Zan"/>
-                            <constraint firstItem="bno-cg-EmL" firstAttribute="top" secondItem="jdW-kv-f6v" secondAttribute="bottom" id="qCq-KH-zLD"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="height" secondItem="L8A-NB-Is4" secondAttribute="height" id="0gg-3R-fmb"/>
+                            <constraint firstItem="Hf9-iD-Ywk" firstAttribute="top" secondItem="KPX-BF-nCV" secondAttribute="bottom" id="1fj-8j-6Ez"/>
+                            <constraint firstItem="Hf9-iD-Ywk" firstAttribute="top" secondItem="Bjf-hq-Byh" secondAttribute="bottom" id="9Mq-P5-DLU"/>
+                            <constraint firstItem="Bjf-hq-Byh" firstAttribute="top" secondItem="3aM-i3-TIM" secondAttribute="bottom" id="Afd-Pv-UyL"/>
+                            <constraint firstItem="KPX-BF-nCV" firstAttribute="top" secondItem="L8A-NB-Is4" secondAttribute="bottom" id="L6u-Rm-j4w"/>
+                            <constraint firstItem="KPX-BF-nCV" firstAttribute="leading" secondItem="Bjf-hq-Byh" secondAttribute="trailing" id="ViW-z1-IYL"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="leading" secondItem="pMD-CA-07Z" secondAttribute="leading" id="Yfe-Eb-pnM"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="width" secondItem="Bjf-hq-Byh" secondAttribute="width" id="bga-iP-ZFv"/>
+                            <constraint firstAttribute="trailing" secondItem="L8A-NB-Is4" secondAttribute="trailing" id="eui-lO-sFb"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="height" secondItem="Bjf-hq-Byh" secondAttribute="height" id="hWK-Bp-Lnp"/>
+                            <constraint firstItem="L8A-NB-Is4" firstAttribute="leading" secondItem="3aM-i3-TIM" secondAttribute="trailing" id="hht-TC-Dgy"/>
+                            <constraint firstAttribute="trailing" secondItem="KPX-BF-nCV" secondAttribute="trailing" id="k7p-rH-Ecl"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="height" secondItem="KPX-BF-nCV" secondAttribute="height" id="on6-7h-Ihk"/>
+                            <constraint firstItem="Bjf-hq-Byh" firstAttribute="leading" secondItem="pMD-CA-07Z" secondAttribute="leading" id="s2a-IE-TrC"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="width" secondItem="L8A-NB-Is4" secondAttribute="width" id="tdb-dF-CGS"/>
+                            <constraint firstItem="3aM-i3-TIM" firstAttribute="width" secondItem="KPX-BF-nCV" secondAttribute="width" id="uvn-vV-f5Y"/>
+                            <constraint firstItem="L8A-NB-Is4" firstAttribute="top" secondItem="b7D-mI-96D" secondAttribute="bottom" id="z6c-Jm-ESY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="macawView" destination="bno-cg-EmL" id="wY5-Vl-ew5"/>
+                        <outlet property="bestScoreView" destination="H3U-QI-Xrp" id="nBY-5X-f0n"/>
+                        <outlet property="dailySummaryView" destination="tL8-iS-Dzr" id="KbC-L6-GNl"/>
+                        <outlet property="runningLevelView" destination="j4A-3J-9DM" id="bov-aT-DJq"/>
+                        <outlet property="totalStepsView" destination="DC2-fM-iAb" id="rjW-4J-UA2"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh6-qH-YzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBR-vr-tXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="509"/>
-        </scene>
-        <!--Running Level Controller-->
-        <scene sceneID="GaE-DV-fAG">
-            <objects>
-                <viewController id="2cE-NF-FpH" customClass="RunningLevelController" customModule="HealthStat" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hdf-Fy-23F"/>
-                        <viewControllerLayoutGuide type="bottom" id="wj5-Ef-MDJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HWG-LA-bOf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdm-uC-8K6" customClass="MacawView" customModule="Macaw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.37647058820000001" green="0.25098039220000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="rdm-uC-8K6" firstAttribute="top" secondItem="HWG-LA-bOf" secondAttribute="top" id="RXd-tZ-Fcl"/>
-                            <constraint firstItem="rdm-uC-8K6" firstAttribute="leading" secondItem="HWG-LA-bOf" secondAttribute="leading" id="TxV-3L-NDk"/>
-                            <constraint firstItem="wj5-Ef-MDJ" firstAttribute="top" secondItem="rdm-uC-8K6" secondAttribute="bottom" id="ake-6t-mb4"/>
-                            <constraint firstAttribute="trailing" secondItem="rdm-uC-8K6" secondAttribute="trailing" id="yTa-6r-qdR"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="macawView" destination="rdm-uC-8K6" id="qE9-O8-15I"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="54s-Yc-pk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-287" y="509"/>
+            <point key="canvasLocation" x="2020.8984374999998" y="546.875"/>
         </scene>
     </scenes>
 </document>
