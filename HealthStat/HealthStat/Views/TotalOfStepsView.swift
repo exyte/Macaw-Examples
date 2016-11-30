@@ -93,7 +93,6 @@ open class TotalOfStepsView: MacawView {
             )
             text.align = .mid
             text.place = .move(dx: Double((barsSpacing + segmentWidth) * barIndex + (segmentWidth / 2)), dy: 0)
-            text.opacity = 0
             captionsGroup.contents.append(text)
         }
         
@@ -104,11 +103,6 @@ open class TotalOfStepsView: MacawView {
         animations.removeAll()
         barsGroup.contents.enumerated().forEach { nodeIndex, node in
             if let barGroup = node as? Group {
-                if let captionText = captionsGroup.contents[nodeIndex] as? Text {
-                    self.animations.append(
-                        captionText.opacityVar.animation(from: 0, to: 1, during: 0.2, delay: Double(nodeIndex) * 0.1)
-                    )
-                }
                 let barSize = self.barsValues[nodeIndex]
                 barGroup.contents.enumerated().forEach { barNodeIndex, barNode in
                     if let segmentShape = barNode as? Shape, barNodeIndex <= barSize - 1 {

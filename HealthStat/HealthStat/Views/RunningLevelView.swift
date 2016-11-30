@@ -9,7 +9,6 @@ open class RunningLevelView: MacawView {
     private var captionsGroup = Group()
     
     private var barAnimations = [Animation]()
-    private var animations = [Animation]()
     private let barsValues = [70, 90, 50, 100, 70, 50, 20]
     private let barsCaptions = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
     private let barsCount = 7
@@ -89,7 +88,6 @@ open class RunningLevelView: MacawView {
                 dx: Double((barIndex * (barWidth + barsSpacing)) + barWidth / 2),
                 dy: 0
             )
-            text.opacity = 0
             captionsGroup.contents.append(text)
         }
         
@@ -97,15 +95,9 @@ open class RunningLevelView: MacawView {
     }
     
     private func createAnimations() {
-        animations.removeAll()
         barAnimations.removeAll()
         for (index, node) in mainGroup.contents.enumerated() {
             if let group = node as? Group {
-                if let captionText = captionsGroup.contents[index] as? Text {
-                    animations.append(
-                        captionText.opacityVar.animation(from: 0, to: 1, during: 0.2, delay: Double(index) * 0.2)
-                    )
-                }
                 let heightValue = self.barHeight / 100 * barsValues[index]
                 let animation = group.contentsVar.animation({ t in
                     let value = Double(heightValue) / 100 * (t * 100)
@@ -132,15 +124,9 @@ open class RunningLevelView: MacawView {
     open func play() {
         createScene()
         createAnimations()
-        barAnimations.sequence().play()
-        if let lastAnimation = animations.last {
-            _ = lastAnimation.onComplete {
-                self.completionCallback()
-            }
-        }
-        animations.forEach {
-            $0.play()
-        }
+        barAnimations.sequence().onComplete {
+            self.completionCallback()
+        }.play()
     }
     
 }
