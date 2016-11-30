@@ -17,17 +17,17 @@ A simple application with animated bar charts. Step by step tutorial is presente
 
 <img src="https://www.dropbox.com/s/766wpt4tx6bf0ph/howto-animation-1.gif?dl=1" width="460">
 
-### PeriodicTable
-
-Do you like chemistry? This iPad application shows full power of Macaw: affine transformations, user events, animation and various effects.
-
-<img src="https://www.dropbox.com/s/b6lspzzqa80ielk/periodic-ipad.gif?dl=1" width="600">
-
 ### HealthStat
 
 Activity Monitor app concept shows number of steps, running level and daily summary.
 
 <img src="https://www.dropbox.com/s/xvvifi7gbre11sc/healthstat.gif?dl=1" width="600">
+
+### PeriodicTable
+
+Do you like chemistry? This iPad application shows full power of Macaw: affine transformations, user events, animation and various effects.
+
+<img src="https://www.dropbox.com/s/b6lspzzqa80ielk/periodic-ipad.gif?dl=1" width="600">
 
 ## Requirements
 * iOS 8.0+ / Mac OS X 10.9+
