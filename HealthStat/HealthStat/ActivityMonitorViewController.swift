@@ -10,10 +10,17 @@ open class ActivityMonitorViewController: UIViewController {
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.perform(#selector(play), with: .none, afterDelay: 1)
+        runningLevelView.completionCallback = {
+            self.play(withDelay: 0.5)
+        }
+        play(withDelay: 1)
     }
     
-    open func play() {
+    private func play(withDelay: TimeInterval) {
+        self.perform(#selector(animateViews), with: .none, afterDelay: withDelay)
+    }
+    
+    open func animateViews() {
         bestScoreView.play()
         totalStepsView.play()
         runningLevelView.play()

@@ -2,6 +2,9 @@ import Macaw
 
 open class TotalOfStepsView: MacawView {
     
+    private var barsGroup = Group()
+    private var captionsGroup = Group()
+    
     private var animations = [Animation]()
     private let barsValues = [3, 4, 6, 10, 5]
     private let barsCaptions = ["2,265", "6,412", "8,972", "12,355", "7,773"]
@@ -28,64 +31,6 @@ open class TotalOfStepsView: MacawView {
         Color(val: $0)
     }
     
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        let viewCenterX = Double(self.frame.width / 2)
-        
-        let text = Text(
-            text: "Total of Steps",
-            font: Font(name: "Serif", size: 24),
-            fill: Color(val: 0xFFFFFF)
-        )
-        text.align = .mid
-        text.place = .move(dx: viewCenterX, dy: 30)
-        
-        let barsWidth = Double((segmentWidth * barsCount) + (barsSpacing * (barsCount - 1)))
-        let barsCenterX = viewCenterX - barsWidth / 2
-        
-        let barsBackgroundGroup = createBars(centerX: barsCenterX, isEmpty: true)
-        let barsGroup = createBars(centerX: barsCenterX, isEmpty: false)
-        
-        let captionsGroup = Group()
-        captionsGroup.place = Transform.move(
-            dx: barsCenterX,
-            dy: 100 + Double((segmentHeight + segmentsSpacing) * barSegmentsCount)
-        )
-        for barIndex in 0...barsCount - 1 {
-            let text = Text(
-                text: barsCaptions[barIndex],
-                font: Font(name: "Serif", size: 14),
-                fill: Color(val: 0xFFFFFF)
-            )
-            text.align = .mid
-            text.place = .move(dx: Double((barsSpacing + segmentWidth) * barIndex + (segmentWidth / 2)), dy: 0)
-            text.opacity = 0
-            captionsGroup.contents.append(text)
-        }
-        
-        self.node = [text, barsGroup, barsBackgroundGroup, captionsGroup].group()
-        
-        barsGroup.contents.enumerated().forEach { nodeIndex, node in
-            if let barGroup = node as? Group {
-                if let captionText = captionsGroup.contents[nodeIndex] as? Text {
-                    self.animations.append(
-                        captionText.opacityVar.animation(from: 0, to: 1, during: 0.1, delay: Double(nodeIndex) * 0.1)
-                    )
-                }
-                let barSize = self.barsValues[nodeIndex]
-                barGroup.contents.enumerated().forEach { barNodeIndex, barNode in
-                    if let segmentShape = barNode as? Shape, barNodeIndex <= barSize - 1 {
-                        let delay = Double(barNodeIndex) * 0.05 + Double(nodeIndex) * 0.1
-                        self.animations.append(
-                            segmentShape.opacityVar.animation(from: 0, to: 1, during: 0.1, delay: delay)
-                        )
-                    }
-                }
-            }
-        }
-    }
-    
     private func createBars(centerX: Double, isEmpty: Bool) -> Group {
         let barsGroup = Group()
         barsGroup.place = Transform.move(dx: centerX, dy: 90)
@@ -101,7 +46,6 @@ open class TotalOfStepsView: MacawView {
         return barsGroup
     }
 
-    
     private func createSegment(segmentIndex: Int, isEmpty: Bool) -> Shape {
         return Shape(
             form: RoundRect(
@@ -119,8 +63,71 @@ open class TotalOfStepsView: MacawView {
         )
     }
     
+    private func createScene() {
+        let viewCenterX = Double(self.frame.width / 2)
+        
+        let text = Text(
+            text: "Total of Steps",
+            font: Font(name: "Serif", size: 24),
+            fill: Color(val: 0xFFFFFF)
+        )
+        text.align = .mid
+        text.place = .move(dx: viewCenterX, dy: 30)
+        
+        let barsWidth = Double((segmentWidth * barsCount) + (barsSpacing * (barsCount - 1)))
+        let barsCenterX = viewCenterX - barsWidth / 2
+        
+        let barsBackgroundGroup = createBars(centerX: barsCenterX, isEmpty: true)
+        barsGroup = createBars(centerX: barsCenterX, isEmpty: false)
+        
+        captionsGroup = Group()
+        captionsGroup.place = Transform.move(
+            dx: barsCenterX,
+            dy: 100 + Double((segmentHeight + segmentsSpacing) * barSegmentsCount)
+        )
+        for barIndex in 0...barsCount - 1 {
+            let text = Text(
+                text: barsCaptions[barIndex],
+                font: Font(name: "Serif", size: 14),
+                fill: Color(val: 0xFFFFFF)
+            )
+            text.align = .mid
+            text.place = .move(dx: Double((barsSpacing + segmentWidth) * barIndex + (segmentWidth / 2)), dy: 0)
+            text.opacity = 0
+            captionsGroup.contents.append(text)
+        }
+        
+        self.node = [text, barsGroup, barsBackgroundGroup, captionsGroup].group()
+    }
+    
+    private func createAnimations() {
+        animations.removeAll()
+        barsGroup.contents.enumerated().forEach { nodeIndex, node in
+            if let barGroup = node as? Group {
+                if let captionText = captionsGroup.contents[nodeIndex] as? Text {
+                    self.animations.append(
+                        captionText.opacityVar.animation(from: 0, to: 1, during: 0.2, delay: Double(nodeIndex) * 0.1)
+                    )
+                }
+                let barSize = self.barsValues[nodeIndex]
+                barGroup.contents.enumerated().forEach { barNodeIndex, barNode in
+                    if let segmentShape = barNode as? Shape, barNodeIndex <= barSize - 1 {
+                        let delay = Double(barNodeIndex) * 0.05 + Double(nodeIndex) * 0.1
+                        self.animations.append(
+                            segmentShape.opacityVar.animation(from: 0, to: 1, during: 0.2, delay: delay)
+                        )
+                    }
+                }
+            }
+        }
+    }
+    
     open func play() {
-        animations.forEach { $0.play() }
+        createScene()
+        createAnimations()
+        animations.forEach {
+            $0.play()
+        }
     }
     
 }

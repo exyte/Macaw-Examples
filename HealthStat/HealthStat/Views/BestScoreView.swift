@@ -10,6 +10,8 @@ open class BestScoreView: MacawView {
         
     }
     
+    private var animationRect = Shape(form: Rect())
+    
     private var animations = [Animation]()
     private var scoreLines = [ScoreLine]()
     private let cubicCurve = CubicCurveAlgorithm()
@@ -20,9 +22,7 @@ open class BestScoreView: MacawView {
     private let captionsX = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
     private let captionsY = ["5 mi", "4 mi", "3 mi", "2 mi", "1 mi"]
 
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    private func createScene() {
         scoreLines.append(
             ScoreLine(
                 points: [
@@ -116,14 +116,11 @@ open class BestScoreView: MacawView {
             chartLinesGroup.contents.append(shape)
         }
         
-        let rect = Shape(
-            form: Rect(x: 0, y: 0, w: Double(chartWidth), h: 160),
+        animationRect = Shape(
+            form: Rect(x: 0, y: 0, w: Double(chartWidth + 1), h: Double(chartHeight + backgroundLineSpacing)),
             fill: Color(val: 0x4a2e7d)
         )
-        chartLinesGroup.contents.append(rect)
-        animations.append(
-            rect.placeVar.animation(to: Transform.move(dx: Double(self.frame.width), dy: 0), during: 2, delay: 0.1)
-        )
+        chartLinesGroup.contents.append(animationRect)
         let lineColor = Color.rgba(r: 255, g: 255, b: 255, a: 0.1)
         let captionColor = Color.rgba(r: 255, g: 255, b: 255, a: 0.5)
         var captionIndex = 0
@@ -136,7 +133,7 @@ open class BestScoreView: MacawView {
                     y1: 0,
                     x2: x,
                     y2: y2
-                    ).stroke(fill: lineColor)
+                ).stroke(fill: lineColor)
             )
             if index % 2 == 0 {
                 let text = Text(
@@ -185,8 +182,19 @@ open class BestScoreView: MacawView {
         self.node = [text, chartGroup].group()
     }
     
+    private func createAnimations() {
+        animations.removeAll()
+        animations.append(
+            animationRect.placeVar.animation(to: Transform.move(dx: Double(self.frame.width), dy: 0), during: 2)
+        )
+    }
+    
     open func play() {
-        animations.forEach { $0.play() }
+        createScene()
+        createAnimations()
+        animations.forEach {
+            $0.play()
+        }
     }
     
 }

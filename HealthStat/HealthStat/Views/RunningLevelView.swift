@@ -2,6 +2,12 @@ import Macaw
 
 open class RunningLevelView: MacawView {
     
+    open var completionCallback: (() -> ()) = { }
+    
+    private var backgroundGroup = Group()
+    private var mainGroup = Group()
+    private var captionsGroup = Group()
+    
     private var barAnimations = [Animation]()
     private var animations = [Animation]()
     private let barsValues = [70, 90, 50, 100, 70, 50, 20]
@@ -12,10 +18,9 @@ open class RunningLevelView: MacawView {
     private let barHeight = 200
     
     private let emptyBarColor = Color.rgba(r: 138, g: 147, b: 219, a: 0.5)
-
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    private let gradientColor = LinearGradient(degree: 90, from: Color(val: 0xfc0c7e), to: Color(val: 0xffd85e))
+    
+    private func createScene() {
         let viewCenterX = Double(self.frame.width / 2)
         
         let barsWidth = Double((barWidth * barsCount) + (barsSpacing * (barsCount - 1)))
@@ -29,7 +34,7 @@ open class RunningLevelView: MacawView {
         text.align = .mid
         text.place = .move(dx: viewCenterX, dy: 30)
         
-        let backgroundGroup = Group()
+        backgroundGroup = Group()
         for barIndex in 0...barsCount - 1 {
             let barShape = Shape(
                 form: RoundRect(
@@ -47,9 +52,7 @@ open class RunningLevelView: MacawView {
             backgroundGroup.contents.append(barShape)
         }
         
-        let gradientColor = LinearGradient(degree: 90, from: Color(val: 0xfc0c7e), to: Color(val: 0xffd85e))
-        
-        let mainGroup = Group()
+        mainGroup = Group()
         for barIndex in 0...barsCount - 1 {
             let barShape = Shape(
                 form: RoundRect(
@@ -70,7 +73,7 @@ open class RunningLevelView: MacawView {
         backgroundGroup.place = Transform.move(dx: barsCenterX, dy: 90)
         mainGroup.place = Transform.move(dx: barsCenterX, dy: 90)
         
-        let captionsGroup = Group()
+        captionsGroup = Group()
         captionsGroup.place = Transform.move(
             dx: barsCenterX,
             dy: 100 + Double(barHeight)
@@ -91,13 +94,16 @@ open class RunningLevelView: MacawView {
         }
         
         self.node = [text, backgroundGroup, mainGroup, captionsGroup].group()
-        
-        
+    }
+    
+    private func createAnimations() {
+        animations.removeAll()
+        barAnimations.removeAll()
         for (index, node) in mainGroup.contents.enumerated() {
             if let group = node as? Group {
                 if let captionText = captionsGroup.contents[index] as? Text {
                     animations.append(
-                        captionText.opacityVar.animation(from: 0, to: 1, during: 0.1, delay: Double(index) * 0.2)
+                        captionText.opacityVar.animation(from: 0, to: 1, during: 0.2, delay: Double(index) * 0.2)
                     )
                 }
                 let heightValue = self.barHeight / 100 * barsValues[index]
@@ -114,19 +120,27 @@ open class RunningLevelView: MacawView {
                             rx: 5,
                             ry: 5
                         ),
-                        fill: gradientColor
+                        fill: self.gradientColor
                     )
                     return [barShape]
                 }, during: 0.2, delay: 0).easing(Easing.easeInOut)
                 barAnimations.append(animation)
             }
         }
-        
     }
     
     open func play() {
+        createScene()
+        createAnimations()
         barAnimations.sequence().play()
-        animations.forEach { $0.play() }
+        if let lastAnimation = animations.last {
+            _ = lastAnimation.onComplete {
+                self.completionCallback()
+            }
+        }
+        animations.forEach {
+            $0.play()
+        }
     }
     
 }
