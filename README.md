@@ -25,9 +25,9 @@ Do you like chemistry? This iPad application shows full power of Macaw: affine t
 
 ### HealthStat
 
-Activity Monitor app concept shows number of steps, running level and daily summary. The application is in the early development stage and is using the macaw development branch feature [content_animation](https://github.com/exyte/macaw/tree/content_animation).
+Activity Monitor app concept shows number of steps, running level and daily summary.
 
-<img src="https://www.dropbox.com/s/hyr2j272zxpjt7l/examples-health.png?dl=1" width="600">
+<img src="https://www.dropbox.com/s/xvvifi7gbre11sc/healthstat.gif?dl=1" width="600">
 
 ## Requirements
 * iOS 8.0+ / Mac OS X 10.9+
