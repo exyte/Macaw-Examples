@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'HealthStat' do
 
-pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git', :branch => 'content_animation'
+pod 'Macaw', '0.8.0'
 
 end
 post_install do |installer|

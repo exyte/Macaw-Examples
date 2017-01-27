@@ -59,7 +59,7 @@ class MyView: MacawView {
             items.append(bar)
             animations.append(bar.placeVar.animation(to: .move(dx: 0, dy: -data[i]), delay: Double(i) * 0.1))
         }
-        _ = button.onTap.subscribe(onNext: { _ in animations.combine().play() })
+        _ = button.onTap { _ in animations.combine().play() }
         return Group(contents: items, place: .move(dx: 0, dy: 200))
     }
 }
