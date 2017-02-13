@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		84B03CD7E4C45D8270E1DAA2 /* Pods_Streaks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E308819AD66DD21F5A3578 /* Pods_Streaks.framework */; };
 		B016A5291E50638F0011E0FD /* StreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A5281E50638F0011E0FD /* StreaksView.swift */; };
+		B06ED4951E51F74400822945 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ED4941E51F74400822945 /* AddTaskViewController.swift */; };
 		B08191381E5062BF00383D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08191371E5062BF00383D80 /* AppDelegate.swift */; };
-		B081913A1E5062BF00383D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08191391E5062BF00383D80 /* ViewController.swift */; };
 		B081913D1E5062BF00383D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B081913B1E5062BF00383D80 /* Main.storyboard */; };
 		B081913F1E5062BF00383D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B081913E1E5062BF00383D80 /* Assets.xcassets */; };
 		B08191421E5062BF00383D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08191401E5062BF00383D80 /* LaunchScreen.storyboard */; };
@@ -20,9 +20,9 @@
 		48E308819AD66DD21F5A3578 /* Pods_Streaks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streaks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7EDDC22B8554E323047FDE /* Pods-Streaks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streaks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streaks/Pods-Streaks.release.xcconfig"; sourceTree = "<group>"; };
 		B016A5281E50638F0011E0FD /* StreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreaksView.swift; sourceTree = "<group>"; };
+		B06ED4941E51F74400822945 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		B08191341E5062BF00383D80 /* Streaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08191371E5062BF00383D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B08191391E5062BF00383D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B081913C1E5062BF00383D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B081913E1E5062BF00383D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08191411E5062BF00383D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				B08191371E5062BF00383D80 /* AppDelegate.swift */,
-				B08191391E5062BF00383D80 /* ViewController.swift */,
+				B06ED4941E51F74400822945 /* AddTaskViewController.swift */,
 				B016A5281E50638F0011E0FD /* StreaksView.swift */,
 				B081913B1E5062BF00383D80 /* Main.storyboard */,
 				B081913E1E5062BF00383D80 /* Assets.xcassets */,
@@ -215,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B016A5291E50638F0011E0FD /* StreaksView.swift in Sources */,
-				B081913A1E5062BF00383D80 /* ViewController.swift in Sources */,
+				B06ED4951E51F74400822945 /* AddTaskViewController.swift in Sources */,
 				B08191381E5062BF00383D80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +341,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8DA648C73B0DC5C75A560B8 /* Pods-Streaks.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Streaks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,7 +354,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D7EDDC22B8554E323047FDE /* Pods-Streaks.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Streaks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

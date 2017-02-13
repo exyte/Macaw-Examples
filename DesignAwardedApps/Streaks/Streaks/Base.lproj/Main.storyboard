@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Streaks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +24,49 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-qr-lHL" customClass="StreaksView" customModule="Streaks" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNX-qN-fRm">
+                                        <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="Su4-4W-o7Q">
+                                                <rect key="frame" x="30" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="pDR-IN-Bl4"/>
+                                                    <constraint firstAttribute="height" constant="25" id="q8N-Cy-Y6K"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="workout" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-Xv-k2c">
+                                                <rect key="frame" x="175" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="A9o-mP-sPH"/>
+                                                    <constraint firstAttribute="height" constant="25" id="YlM-2C-1Uo"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4ts-sG-NSw">
+                                                <rect key="frame" x="320" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="ISt-Ut-1pi"/>
+                                                    <constraint firstAttribute="height" constant="25" id="dZC-lb-oVw"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="4ts-sG-NSw" secondAttribute="bottom" constant="15" id="0D3-QF-6dI"/>
+                                            <constraint firstAttribute="height" constant="40" id="Yav-Di-X9e"/>
+                                            <constraint firstItem="Su4-4W-o7Q" firstAttribute="leading" secondItem="hNX-qN-fRm" secondAttribute="leading" constant="30" id="Ydx-Wa-zxv"/>
+                                            <constraint firstAttribute="bottom" secondItem="rj9-Xv-k2c" secondAttribute="bottom" constant="15" id="iJL-Kf-bFV"/>
+                                            <constraint firstItem="rj9-Xv-k2c" firstAttribute="centerX" secondItem="hNX-qN-fRm" secondAttribute="centerX" id="juV-eI-9ah"/>
+                                            <constraint firstAttribute="trailing" secondItem="4ts-sG-NSw" secondAttribute="trailing" constant="30" id="rOB-Gg-CYZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Su4-4W-o7Q" secondAttribute="bottom" constant="15" id="yOP-CV-TWB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hNX-qN-fRm" firstAttribute="leading" secondItem="fj5-qr-lHL" secondAttribute="leading" id="AJh-2B-2cZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNX-qN-fRm" secondAttribute="bottom" id="bxt-1W-0kA"/>
+                                    <constraint firstAttribute="trailing" secondItem="hNX-qN-fRm" secondAttribute="trailing" id="lCm-BX-nur"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,5 +82,52 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="vLD-oi-e5v">
+            <objects>
+                <viewController storyboardIdentifier="AddTaskController" id="aNy-Pg-0QM" customClass="AddTaskViewController" customModule="Streaks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ieC-qC-Nhv"/>
+                        <viewControllerLayoutGuide type="bottom" id="FAw-WC-6yA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q1i-pg-8mA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-Jo-HTB">
+                                <rect key="frame" x="133" y="28" width="109" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXD-Ny-Xhm">
+                                <rect key="frame" x="16" y="23" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Kvs-v3-m4E"/>
+                                    <constraint firstAttribute="height" constant="30" id="xbA-F8-mJp"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="onClose:" destination="aNy-Pg-0QM" eventType="touchUpInside" id="3YN-uM-d7a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yXD-Ny-Xhm" firstAttribute="leading" secondItem="q1i-pg-8mA" secondAttribute="leadingMargin" id="Gac-OY-ahZ"/>
+                            <constraint firstItem="yXD-Ny-Xhm" firstAttribute="top" secondItem="ieC-qC-Nhv" secondAttribute="bottom" constant="3" id="PqI-ou-HGH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9J-W4-Mj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="138.98050974512745"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="calendar" width="25" height="25"/>
+        <image name="close" width="30" height="30"/>
+        <image name="settings" width="25" height="25"/>
+        <image name="workout" width="25" height="22"/>
+    </resources>
 </document>

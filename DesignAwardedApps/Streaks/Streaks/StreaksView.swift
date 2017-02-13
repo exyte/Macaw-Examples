@@ -17,27 +17,22 @@ class StreaksView: MacawView {
     
     func streaks() -> Node {
         return [
-                ("Medium post", "streaks-M"),
-                ("Take a photo", "streaks-camera"),
-                ("Cycle 5 km", "streaks-bike"),
-                ("Brush your teeth", "streaks-tooth"),
-                ("Practice guitar", "streaks-guitar"),
-                ("Add a task", "streaks-plus")
-            ].enumerated().map { (index, element) in
-                let streakObj = streak(
-                    text: element.0,
-                    imageName: element.1,
-                    addTask: index == 5
+            ("Medium post", "streaks-M"),
+            ("Take a photo", "streaks-camera"),
+            ("Cycle 5 km", "streaks-bike"),
+            ("Brush your teeth", "streaks-tooth"),
+            ("Practice guitar", "streaks-guitar"),
+            ("Add a task", "streaks-plus")
+        ].enumerated().map { (index, element) in
+            let streak = self.streak(text: element.0, imageName: element.1, addTask: index == 5)
+            return Group(
+                contents: [streak],
+                place: Transform.move(
+                    dx: Double(screen.width / 2) * Double(index % 2),
+                    dy: 30 + Double(Int(index / 2) * Int(screen.width / 2))
                 )
-                return Group(
-                        contents: [streakObj],
-                        place: Transform.move(
-                            dx: Double(screen.width / 2) * Double(index % 2),
-                            dy: 30 + Double(Int(index / 2) * Int(screen.width / 2)
-                        )
-                    )
-                )
-            }.group()
+            )
+        }.group()
     }
     
     func streak(text: String, imageName: String, addTask: Bool = false) -> Group {
@@ -115,8 +110,6 @@ class StreaksView: MacawView {
         
         logoGroup.onTap { tapEvent in
             if addTask {
-                animationGroup.contents = []
-                animationGroup.opacity = 1.0
                 self.addTaskAnimation(group: animationGroup, ellipse: ellipse)
             }
         }
@@ -125,7 +118,10 @@ class StreaksView: MacawView {
     }
     
     func addTaskAnimation(group: Group, ellipse: Ellipse) {
-        let mainAnimation = group.contentsVar.animation({ t in
+        group.contents = []
+        group.opacity = 1.0
+
+        let animation = group.contentsVar.animation({ t in
             let animatedShape = Shape(
                 form: Arc(
                     ellipse: ellipse,
@@ -139,10 +135,14 @@ class StreaksView: MacawView {
             )
             return [animatedShape]
         }, during: 0.5).easing(Easing.easeInOut)
-        
-        let opacityAnimation = group.opacityVar.animation(to: 0.0, during: 0.5)
-        
-        let animation = [mainAnimation, opacityAnimation].sequence()
+
+        animation.onComplete {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "AddTaskController")
+            let topViewController = UIApplication.shared.delegate?.window??.rootViewController
+            topViewController?.present(vc, animated: true, completion: nil)
+            group.opacity = 0.0
+        }
         animation.play()
     }
     
