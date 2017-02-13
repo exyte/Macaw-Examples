@@ -24,41 +24,85 @@ class StreaksView: MacawView {
                 ("Practice guitar", "streaks-guitar"),
                 ("Add a task", "streaks-plus")
             ].enumerated().map { (index, element) in
-                let radius = 0.6 * Double(screen.width / 4)
-                
-                let streakObj = Group(contents: [streak(text: element.0, imageName: element.1, radius: radius)])
-//                let streakObj = Group(contents: [statistics()])
-//                let streakObj = Group(contents: [calendar(month: "January")])
-                streakObj.place = Transform.move(
-                    dx: Double(screen.width / 2) * Double(index % 2) ,
-                    dy: 30 + Double(Int(index / 2) * Int(screen.width / 2))
+                let streakObj = streak(
+                    text: element.0,
+                    imageName: element.1,
+                    addTask: index == 5
                 )
-                return streakObj
+                return Group(
+                        contents: [streakObj],
+                        place: Transform.move(
+                            dx: Double(screen.width / 2) * Double(index % 2),
+                            dy: 30 + Double(Int(index / 2) * Int(screen.width / 2)
+                        )
+                    )
+                )
             }.group()
     }
     
-    func streak(text: String, imageName: String, radius: Double) -> Group {
-        let streakEllipse = Ellipse(cx: radius, cy: radius, rx: radius, ry: radius)
-        
-        let streakBorder = Shape(
-            form: Arc(ellipse: streakEllipse, extent: 2 * M_PI),
-            fill: background,
-            stroke: Stroke(fill: Color(val: 0x744641), width: 8)
-        )
-        
-        let streakTitle = Text(
+    func streak(text: String, imageName: String, addTask: Bool = false) -> Group {
+        let title = Text(
             text: text.uppercased(),
             font: Font(name: fontName, size: 14),
             fill: Color.white,
             align: .mid,
             place: Transform.move(
-                dx: radius,
-                dy: 2 * radius + 20
+                dx: Double(screen.width) / 4,
+                dy: 0.7 * Double(screen.width) / 2
             )
         )
         
+        let sizes = [0.6, 0.6, 0.8].map { persentage in
+            persentage * Double(screen.width) / 2
+        }
+        
+        let contents = [
+            [ logo(imageName: imageName, addTask: addTask, width: sizes[0]) ],
+            [ calendar(month: "January", width: sizes[1]) ],
+            [ statistics(width: sizes[2]) ]
+        ]
+        
+        let streakContent = Group(contents: [])
+        let streak = Group(contents: [streakContent, title])
+        
+        func updateStreak(index: Int) {
+            let margin = Double(screen.width) / 2 - sizes[index]
+            streakContent.contents = contents[index]
+            streakContent.place = Transform.move(dx: margin / 2, dy: 0)
+        }
+        
+        func animateStreak(index: Int) {
+            let animation = streakContent.opacityVar.animation(to: 0.0, during: 0.1)
+            animation.onComplete {
+                updateStreak(index: index)
+                streakContent.opacityVar.animation(to: 1.0, during: 0.1).play()
+            }
+            animation.play()
+        }
+        
+        streak.onTap { tapEvent in
+            if !addTask {
+                let index = contents.index { $0 == streakContent.contents }!
+                animateStreak(index: (index + 1) % contents.count)
+            }
+        }
+        
+        updateStreak(index: 0)
+        return streak
+    }
+    
+    func logo(imageName: String, addTask: Bool, width: Double) -> Group {
+        let radius = width / 2
+        let ellipse = Ellipse(cx: radius, cy: radius, rx: radius, ry: radius)
+        
+        let border = Shape(
+            form: Arc(ellipse: ellipse, extent: 2 * M_PI),
+            fill: background,
+            stroke: Stroke(fill: Color(val: 0x744641), width: 8)
+        )
+        
         let image = UIImage(named: imageName)!
-        let streakImage = Image(
+        let logoImage = Image(
             src: imageName,
             place: Transform.move(
                 dx: radius - Double(image.size.width) / 2,
@@ -67,20 +111,20 @@ class StreaksView: MacawView {
         )
         
         let animationGroup = Group(contents: [])
-        let streakGroup = Group(contents: [streakBorder, streakImage, animationGroup])
+        let logoGroup = [border, logoImage].group()
         
-        streakGroup.onTap { tapEvent in
-            animationGroup.contents = []
-            animationGroup.opacity = 1.0
-            self.animate(group: animationGroup, ellipse: streakEllipse)
+        logoGroup.onTap { tapEvent in
+            if addTask {
+                animationGroup.contents = []
+                animationGroup.opacity = 1.0
+                self.addTaskAnimation(group: animationGroup, ellipse: ellipse)
+            }
         }
         
-        let streak = Group(contents: [streakGroup, streakTitle])
-        streak.place = Transform.move(dx: Double(screen.width / 4) - radius, dy: 0)
-        return streak
+        return [logoGroup, animationGroup].group()
     }
     
-    func animate(group: Group, ellipse: Ellipse) {
+    func addTaskAnimation(group: Group, ellipse: Ellipse) {
         let mainAnimation = group.contentsVar.animation({ t in
             let animatedShape = Shape(
                 form: Arc(
@@ -102,24 +146,22 @@ class StreaksView: MacawView {
         animation.play()
     }
     
-    func statistics() -> Group {
-        let width = Double(screen.width) / 2 * 0.8
-        
-        let barsGroup = [
-            ("Streak 1", "Best 12", 1.0),
-            ("Last 7 days", "26%", 0.26),
-            ("Last 30 days", "64%", 0.64)
-        ].enumerated().map { (index, element) in
-            let barNode = bar(width: width,
-                leftText: element.0,
-                rightText: element.1,
-                percentage: element.2
-            )
-            barNode.place = Transform.move(dx: 0, dy: Double(index) * 38.0)
-            return barNode
-        }.group()
-        barsGroup.place = Transform.move(dx: Double(screen.width) / 2 * 0.1, dy: 0)
-        return barsGroup
+    func statistics(width: Double) -> Group {
+        let shape = Shape(form: Rect(x: 0, y: 0, w: width, h: 110), fill: background)
+        return Group(contents: [shape, [
+                ("Streak 1", "Best 12", 1.0),
+                ("Last 7 days", "26%", 0.26),
+                ("Last 30 days", "64%", 0.64)
+            ].enumerated().map { (index, element) in
+                let barNode = bar(width: width,
+                    leftText: element.0,
+                    rightText: element.1,
+                    percentage: element.2
+                )
+                barNode.place = Transform.move(dx: 0, dy: Double(index) * 38.0)
+                return barNode
+            }.group()]
+        )
     }
     
     func bar(width: Double, leftText: String, rightText: String, percentage: Double) -> Node {
@@ -147,21 +189,18 @@ class StreaksView: MacawView {
         )
     }
     
-    func calendar(month: String) -> Group {
+    func calendar(month: String, width: Double) -> Group {
         let tooLightColor = Color.rgba(r: 255, g: 255, b: 255, a: 0.2)
         let doneColor = Color.rgb(r: 255, g: 255, b: 255)
 
-        let width = Double(screen.width) / 2 * 0.6
-        let margin = (Double(screen.width) / 2  - width) / 2
-        
         let monthText = Text(
             text: month.uppercased(),
             font: Font(name: fontName, size: 10),
             fill: lightColor,
             align: .mid,
-            place: Transform.move(dx: Double(screen.width) / 4, dy: 0)
+            place: Transform.move(dx: width / 2, dy: 0)
         )
-        let calendarGroup = Group(contents: [], place: Transform.move(dx: margin, dy: 20))
+        let calendarGroup = Group(contents: [], place: Transform.move(dx: 0, dy: 20))
         let dates = ["S", "M", "T", "W", "T", "F", "S"]
         
         for row in 0...4 {
@@ -201,6 +240,7 @@ class StreaksView: MacawView {
                 }
             }
         }
-        return Group(contents: [monthText, calendarGroup])
+        let shape = Shape(form: Rect(x: 0, y: 0, w: width, h: 90), fill: background)
+        return [shape, monthText, calendarGroup].group()
     }
 }
