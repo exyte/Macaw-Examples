@@ -82,11 +82,11 @@
 			children = (
 				B08BC7991E5066D900910A9B /* AppDelegate.swift */,
 				B08BC79B1E5066D900910A9B /* ViewController.swift */,
+				B08BC7AB1E50673F00910A9B /* StudioView.swift */,
 				B08BC79D1E5066D900910A9B /* Main.storyboard */,
 				B08BC7A01E5066D900910A9B /* Assets.xcassets */,
 				B08BC7A21E5066D900910A9B /* LaunchScreen.storyboard */,
 				B08BC7A51E5066D900910A9B /* Info.plist */,
-				B08BC7AB1E50673F00910A9B /* StudioView.swift */,
 			);
 			path = Auxy;
 			sourceTree = "<group>";
