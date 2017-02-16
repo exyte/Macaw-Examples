@@ -14,6 +14,7 @@ class StudioView: MacawView {
         
     required init?(coder aDecoder: NSCoder) {
         super.init(node: Group(contents: []), coder: aDecoder)
+        
         viewSize = Size(
             w: Double(self.bounds.width),
             h: Double(self.bounds.height)
@@ -55,7 +56,6 @@ class StudioView: MacawView {
 //                sound.pos = newPos
 //            }
         }
-        
     }
     
     func addSound(position: Point, sounds: Group) {
@@ -103,40 +103,65 @@ class StudioView: MacawView {
     }
     
     func playButton() -> Node {
-        let radius = 25.0
-        let timeRadius = radius + 3
-        
-        let color = Color.rgb(r: 219, g: 222, b: 227)
+        let сolor = Color.rgb(r: 219, g: 222, b: 227)
         let pressedColor = Color.rgb(r: 111, g: 112, b: 114)
-        
-        let shape = Shape(
-            form: Circle(r: radius),
-            fill: color
-        )
-        
-        let play = Shape(
-            form: MoveTo(x: -5, y: 10).lineTo(x: 10, y: 0)
-                .lineTo(x: -5, y: -10).close().build(),
-            fill: Color.rgb(r: 46, g: 48, b: 58)
-        )
         
         let border = Shape(
             form: Arc(
-                ellipse: Ellipse(rx: timeRadius, ry: timeRadius),
+                ellipse: Ellipse(rx: 28.0, ry: 28.0),
                 shift: -M_PI / 2 + 0.05,
                 extent: 2 * M_PI - 0.1
             ),
-            stroke: Stroke(fill: color.with(a: 0.3), width: 2)
+            stroke: Stroke(
+                fill: Color.rgba(r: 219, g: 222, b: 227, a: 0.3),
+                width: 2.0
+            )
+        )
+        
+        let shape = Shape(
+            form: Circle(r: 25.0),
+            fill: сolor
         )
         
         let animationGroup = Group(contents: [])
         
-        let playGroup = Group(
-            contents: [shape, play, border, animationGroup],
+        let playButton = Shape(
+            form: MoveTo(x: -1, y: 2).lineTo(x: 2, y: 0)
+                .lineTo(x: -1, y: -2).close().build(),
+            fill: Color.rgb(r: 46, g: 48, b: 58),
+            place: Transform.scale(sx: 5.0, sy: 5.0)
+        )
+        
+        let stopButton = Shape(
+            form: MoveTo(x: -2, y: 2).lineTo(x: 2, y: 2)
+                .lineTo(x: 2, y: -2).lineTo(x: -2, y: -2).close().build(),
+            fill: Color.rgb(r: 46, g: 48, b: 58),
+            place: Transform.scale(sx: 4.0, sy: 4.0)
+        )
+        
+        let buttons = [[playButton], [stopButton]]
+        let buttonGroup = Group(
+            contents: buttons[0]
+        )
+
+        let group = Group(
+            contents: [border, shape, animationGroup, buttonGroup],
             place: Transform.move(dx: viewSize.w / 2, dy: viewSize.h - 50)
         )
-    
-        playGroup.onTouch { touchEvent in
+        
+        let line = Shape(
+            form: Line(
+                x1: 0, y1: -2,
+                x2: self.viewSize.w, y2: -2
+            ),
+            stroke: Stroke(fill: Color.rgb(r: 219, g: 222, b: 227), width: 3.0)
+        )
+        
+        let lineAnimation = line.placeVar.animation(to: Transform.move(dx: 0, dy: viewSize.h), during: 3.0).easing(Easing.linear).cycle()
+        
+        let playAnimation = self.playMusic(group: animationGroup, timeRadius: 28.0)
+        
+        group.onTouch { touchEvent in
             switch touchEvent.state {
             case .began:
                 shape.fill = pressedColor
@@ -144,35 +169,42 @@ class StudioView: MacawView {
             case .moved:
                 break
             case .ended:
-                shape.fill = color
-                self.playMusic(group: animationGroup, timeRadius: timeRadius)
+                shape.fill = сolor
+                let index = buttons.index { $0 == buttonGroup.contents }!
+                buttonGroup.contents = buttons[(index + 1) % buttons.count]
+                
+                animationGroup.contents = []
+                animationGroup.opacity = 1.0
+                
+                if index == 0 {
+                    playAnimation.play()
+                    lineAnimation.play()
+                } else {
+                    playAnimation.stop()
+                    lineAnimation.stop()
+                    animationGroup.opacityVar.animation(to: 0.0, during: 0.1).play()
+                    line.place = Transform.move(dx: 0, dy: 0)
+                }
                 break
             }
         }
 
-        return playGroup
+        return [line, group].group()
     }
     
-    func playMusic(group: Group, timeRadius: Double) {
-        group.contents = []
-        group.opacity = 1.0
-        let animation = group.contentsVar.animation({ t in
+    func playMusic(group: Group, timeRadius: Double) -> Animation {
+        return group.contentsVar.animation({ t in
             let shape = Shape(
                 form: Arc(
                     ellipse: Ellipse(rx: timeRadius, ry: timeRadius),
-                    shift: -M_PI / 2 + 0.05,
-                    extent: 2 * M_PI * t - 0.1
+                    shift: -M_PI / 2,
+                    extent: 2 * M_PI * t
                 ),
                 stroke: Stroke(fill: Color.white, width: 2)
             )
             return [shape]
-        })
-        let animation2 = group.opacityVar.animation(to: 0.0, during: 0.3)
-        
-        
-        [animation, animation2].sequence().play()
+        }, during: 3.0).cycle()
     }
-    
 }
 
 extension Point: Hashable, Equatable {
