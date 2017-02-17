@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		835C602C167D79D90DB9919E /* Pods_Auxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C27DBE47B12715A7D782D0 /* Pods_Auxy.framework */; };
+		B0234A351E56F9CA0027C6CD /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0234A341E56F9CA0027C6CD /* Sound.swift */; };
+		B0234A371E56FF6B0027C6CD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0234A361E56FF6B0027C6CD /* Grid.swift */; };
+		B0234A391E57012F0027C6CD /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0234A381E57012F0027C6CD /* PlayButton.swift */; };
+		B0234A3B1E57079A0027C6CD /* LineRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0234A3A1E57079A0027C6CD /* LineRunner.swift */; };
 		B08BC79A1E5066D900910A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08BC7991E5066D900910A9B /* AppDelegate.swift */; };
 		B08BC79C1E5066D900910A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08BC79B1E5066D900910A9B /* ViewController.swift */; };
 		B08BC79F1E5066D900910A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08BC79D1E5066D900910A9B /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		8704621B2AC1F1A872DA61C3 /* Pods-Auxy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auxy/Pods-Auxy.release.xcconfig"; sourceTree = "<group>"; };
 		A4C27DBE47B12715A7D782D0 /* Pods_Auxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0234A341E56F9CA0027C6CD /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		B0234A361E56FF6B0027C6CD /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B0234A381E57012F0027C6CD /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		B0234A3A1E57079A0027C6CD /* LineRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineRunner.swift; sourceTree = "<group>"; };
 		B08BC7961E5066D900910A9B /* Auxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08BC7991E5066D900910A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B08BC79B1E5066D900910A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 				B08BC7991E5066D900910A9B /* AppDelegate.swift */,
 				B08BC79B1E5066D900910A9B /* ViewController.swift */,
 				B08BC7AB1E50673F00910A9B /* StudioView.swift */,
+				B0234A341E56F9CA0027C6CD /* Sound.swift */,
+				B0234A361E56FF6B0027C6CD /* Grid.swift */,
+				B0234A381E57012F0027C6CD /* PlayButton.swift */,
+				B0234A3A1E57079A0027C6CD /* LineRunner.swift */,
 				B08BC79D1E5066D900910A9B /* Main.storyboard */,
 				B08BC7A01E5066D900910A9B /* Assets.xcassets */,
 				B08BC7A21E5066D900910A9B /* LaunchScreen.storyboard */,
@@ -217,6 +229,10 @@
 				B08BC79C1E5066D900910A9B /* ViewController.swift in Sources */,
 				B08BC79A1E5066D900910A9B /* AppDelegate.swift in Sources */,
 				B08BC7AC1E50673F00910A9B /* StudioView.swift in Sources */,
+				B0234A371E56FF6B0027C6CD /* Grid.swift in Sources */,
+				B0234A351E56F9CA0027C6CD /* Sound.swift in Sources */,
+				B0234A391E57012F0027C6CD /* PlayButton.swift in Sources */,
+				B0234A3B1E57079A0027C6CD /* LineRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
