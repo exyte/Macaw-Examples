@@ -2,7 +2,9 @@ import Foundation
 import Macaw
 
 class LineRunner: Shape {
+    
     var size: Size
+    
     init(size: Size) {
         self.size = size
         super.init(

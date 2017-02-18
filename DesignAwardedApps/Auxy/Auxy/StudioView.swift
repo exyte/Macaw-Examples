@@ -30,16 +30,15 @@ class StudioView: MacawView {
             fill: Color.rgb(r: 46, g: 48, b: 58)
         )
         
-        let play = playButton()
-        
         let sounds = Group(contents: [], opaque: false)
+        
         let grid = Grid(
             dimension: (columns, rows),
             cell: cellSize,
             size: viewSize
         )
         
-        self.node = [background, sounds, grid, play].group()
+        self.node = [background, sounds, grid, playButton()].group()
         
         background.onTap { tapEvent in
             let position = self.getPosition(location: tapEvent.location)

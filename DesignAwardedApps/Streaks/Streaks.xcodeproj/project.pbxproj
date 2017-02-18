@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		84B03CD7E4C45D8270E1DAA2 /* Pods_Streaks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E308819AD66DD21F5A3578 /* Pods_Streaks.framework */; };
 		B016A5291E50638F0011E0FD /* StreaksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A5281E50638F0011E0FD /* StreaksView.swift */; };
+		B052669D1E58054300FD96B6 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052669C1E58054300FD96B6 /* Streak.swift */; };
+		B052669F1E58075B00FD96B6 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052669E1E58075B00FD96B6 /* Logo.swift */; };
+		B05266A11E5807F700FD96B6 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05266A01E5807F700FD96B6 /* Calendar.swift */; };
+		B05266A31E58087000FD96B6 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05266A21E58087000FD96B6 /* Statistics.swift */; };
+		B05266A51E5809A000FD96B6 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05266A41E5809A000FD96B6 /* Styles.swift */; };
 		B06ED4951E51F74400822945 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ED4941E51F74400822945 /* AddTaskViewController.swift */; };
 		B08191381E5062BF00383D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08191371E5062BF00383D80 /* AppDelegate.swift */; };
 		B081913D1E5062BF00383D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B081913B1E5062BF00383D80 /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		48E308819AD66DD21F5A3578 /* Pods_Streaks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streaks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7EDDC22B8554E323047FDE /* Pods-Streaks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streaks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Streaks/Pods-Streaks.release.xcconfig"; sourceTree = "<group>"; };
 		B016A5281E50638F0011E0FD /* StreaksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreaksView.swift; sourceTree = "<group>"; };
+		B052669C1E58054300FD96B6 /* Streak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
+		B052669E1E58075B00FD96B6 /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		B05266A01E5807F700FD96B6 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		B05266A21E58087000FD96B6 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		B05266A41E5809A000FD96B6 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B06ED4941E51F74400822945 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		B08191341E5062BF00383D80 /* Streaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08191371E5062BF00383D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B052669B1E58052F00FD96B6 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				B052669C1E58054300FD96B6 /* Streak.swift */,
+				B052669E1E58075B00FD96B6 /* Logo.swift */,
+				B05266A01E5807F700FD96B6 /* Calendar.swift */,
+				B05266A21E58087000FD96B6 /* Statistics.swift */,
+				B05266A41E5809A000FD96B6 /* Styles.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		B081912B1E5062BF00383D80 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +94,7 @@
 		B08191361E5062BF00383D80 /* Streaks */ = {
 			isa = PBXGroup;
 			children = (
+				B052669B1E58052F00FD96B6 /* Nodes */,
 				B08191371E5062BF00383D80 /* AppDelegate.swift */,
 				B06ED4941E51F74400822945 /* AddTaskViewController.swift */,
 				B016A5281E50638F0011E0FD /* StreaksView.swift */,
@@ -214,7 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05266A31E58087000FD96B6 /* Statistics.swift in Sources */,
 				B016A5291E50638F0011E0FD /* StreaksView.swift in Sources */,
+				B05266A11E5807F700FD96B6 /* Calendar.swift in Sources */,
+				B05266A51E5809A000FD96B6 /* Styles.swift in Sources */,
+				B052669F1E58075B00FD96B6 /* Logo.swift in Sources */,
+				B052669D1E58054300FD96B6 /* Streak.swift in Sources */,
 				B06ED4951E51F74400822945 /* AddTaskViewController.swift in Sources */,
 				B08191381E5062BF00383D80 /* AppDelegate.swift in Sources */,
 			);
