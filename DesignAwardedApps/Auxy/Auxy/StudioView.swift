@@ -16,8 +16,8 @@ class StudioView: MacawView {
         super.init(node: Group(contents: []), coder: aDecoder)
         
         viewSize = Size(
-            w: Double(self.bounds.width),
-            h: Double(self.bounds.height)
+            w: Double(UIScreen.main.bounds.width),
+            h: Double(UIScreen.main.bounds.height)
         )
         
         cellSize = Size(
@@ -68,7 +68,7 @@ class StudioView: MacawView {
     func playButton() -> Node {                
         let time = 3.0
         let button = PlayButton(time: time)
-        button.place = Transform.move(dx: viewSize.w / 2, dy: viewSize.h - 50)
+        button.place = Transform.move(dx: viewSize.w / 2, dy: viewSize.h * 0.85)
         
         let runner = LineRunner(size: viewSize)
         
