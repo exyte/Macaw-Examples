@@ -7,6 +7,7 @@ class ActivityCircle: Group {
     let score: Text
     let icon: Text
     let shadows: Group
+    let emojis: EmojisCircle
     
     init() {
         mainCircle = Shape(
@@ -47,17 +48,15 @@ class ActivityCircle: Group {
                 place: Transform.move(dx: place.x, dy: place.y)
             )
         }.group()
-
         
-        for {
-            
-        }
+        emojis = EmojisCircle()
         
-        super.init(contents: [shadows, mainCircle, score, icon])
+        super.init(contents: [shadows, mainCircle, score, icon, emojis])
     }
     
     func customize(during: Double) -> Animation {
         let lightAnimation = [
+            emojis.open(during: during),
             shadows.placeVar.animation(to: Transform.scale(sx: 0.5, sy: 0.5), during: during),
             mainCircle.opacityVar.animation(to: 1.0, during: during),
             score.placeVar.animation(to: Transform.move(dx: 0, dy: -20), during: during),

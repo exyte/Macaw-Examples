@@ -51,7 +51,7 @@ class ActivityBar: Group {
     }
     
     func stopJumping() {
-        jumpAnimation?.pause()
+        jumpAnimation?.stop()
     }
 }
 

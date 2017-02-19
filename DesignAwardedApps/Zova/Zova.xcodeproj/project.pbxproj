@@ -16,6 +16,7 @@
 		B0927EF61E599A12002BA13A /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EF51E599A12002BA13A /* Styles.swift */; };
 		B0927EF81E599C34002BA13A /* ActivityCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EF71E599C34002BA13A /* ActivityCircle.swift */; };
 		B0927EFA1E59A454002BA13A /* ActivityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EF91E59A454002BA13A /* ActivityBar.swift */; };
+		B0927EFC1E59DDE2002BA13A /* EmojisCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EFB1E59DDE2002BA13A /* EmojisCircle.swift */; };
 		E4F364E8262A1BCDE823F806 /* Pods_Zova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08A4003C401BCA5E5352E39 /* Pods_Zova.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		B0927EF51E599A12002BA13A /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B0927EF71E599C34002BA13A /* ActivityCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCircle.swift; sourceTree = "<group>"; };
 		B0927EF91E59A454002BA13A /* ActivityBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBar.swift; sourceTree = "<group>"; };
+		B0927EFB1E59DDE2002BA13A /* EmojisCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojisCircle.swift; sourceTree = "<group>"; };
 		F08A4003C401BCA5E5352E39 /* Pods_Zova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				B0927EF51E599A12002BA13A /* Styles.swift */,
 				B0927EF71E599C34002BA13A /* ActivityCircle.swift */,
 				B0927EF91E59A454002BA13A /* ActivityBar.swift */,
+				B0927EFB1E59DDE2002BA13A /* EmojisCircle.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0927EE31E598DEB002BA13A /* ViewController.swift in Sources */,
+				B0927EFC1E59DDE2002BA13A /* EmojisCircle.swift in Sources */,
 				B0927EE11E598DEB002BA13A /* AppDelegate.swift in Sources */,
 				B0927EF31E599100002BA13A /* ActivityView.swift in Sources */,
 				B0927EF61E599A12002BA13A /* Styles.swift in Sources */,
