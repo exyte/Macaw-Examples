@@ -6,7 +6,7 @@ class Streak: Group {
     init(text: String, imageName: String, viewSize: Size, addTask: Bool) {
         let title = Text(
             text: text.uppercased(),
-            font: Font(name: fontName, size: 14),
+            font: Font(name: regularFont, size: 14),
             fill: Color.white,
             align: .mid,
             place: Transform.move(

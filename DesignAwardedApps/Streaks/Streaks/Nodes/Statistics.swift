@@ -4,7 +4,7 @@ import Macaw
 class Statistics: Group {
     
     init(width: Double) {
-        let shape = Shape(form: Rect(x: 0, y: 0, w: width, h: 110), fill: background)
+        let shape = Shape(form: Rect(x: 0, y: 0, w: width, h: 110), fill: mainColor)
         super.init(contents: [shape, [
             ("Streak 1", "Best 12", 1.0),
             ("Last 7 days", "26%", 0.26),
@@ -27,12 +27,12 @@ class Bar: Group {
         super.init(contents: [
                 Text(
                     text: leftText.uppercased(),
-                    font: Font(name: fontName, size: 12),
+                    font: Font(name: regularFont, size: 12),
                     fill: Color.white,
                     align: .min
                 ), Text(
                     text: rightText.uppercased(),
-                    font: Font(name: fontName, size: 12),
+                    font: Font(name: regularFont, size: 12),
                     fill: lightColor,
                     align: .max,
                     place: Transform.move(dx: width, dy: 0)

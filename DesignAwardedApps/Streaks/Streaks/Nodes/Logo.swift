@@ -9,7 +9,7 @@ class Logo: Group {
         
         let border = Shape(
             form: Arc(ellipse: ellipse, extent: 2 * M_PI),
-            fill: background,
+            fill: mainColor,
             stroke: Stroke(fill: Color(val: 0x744641), width: 8)
         )
         

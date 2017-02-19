@@ -4,11 +4,11 @@ import Macaw
 class Calendar: Group {
     init(month: String, width: Double) {
         let tooLightColor = Color.rgba(r: 255, g: 255, b: 255, a: 0.2)
-        let doneColor = Color.rgb(r: 255, g: 255, b: 255)
+        let doneColor = Color.white
         
         let monthText = Text(
             text: month.uppercased(),
-            font: Font(name: fontName, size: 10),
+            font: Font(name: regularFont, size: 10),
             fill: lightColor,
             align: .mid,
             place: Transform.move(dx: width / 2, dy: 0)
@@ -26,7 +26,7 @@ class Calendar: Group {
                 if row == 0 {
                     let headerText = Text(
                         text: dates[column],
-                        font: Font(name: fontName, size: 10),
+                        font: Font(name: regularFont, size: 10),
                         fill: lightColor,
                         align: .mid,
                         place: Transform.move(dx: x, dy: y)
@@ -53,7 +53,7 @@ class Calendar: Group {
                 }
             }
         }
-        let shape = Shape(form: Rect(x: 0, y: 0, w: width, h: 90), fill: background)
+        let shape = Shape(form: Rect(x: 0, y: 0, w: width, h: 90), fill: mainColor)
         super.init(contents: [shape, monthText, calendarGroup])
     }
 }

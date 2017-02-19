@@ -7,7 +7,6 @@ class StreaksView: MacawView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(node: Group(contents: []), coder: aDecoder)
-        self.backgroundColor = UIColor(red: 1.0, green: 0.43, blue: 0.29, alpha: 1)
         self.viewSize = Size(
             w: Double(UIScreen.main.bounds.width),
             h: Double(UIScreen.main.bounds.height)
@@ -30,13 +29,11 @@ class StreaksView: MacawView {
                 viewSize: viewSize,
                 addTask: index == 5
             )
-            return Group(
-                contents: [streak],
-                place: Transform.move(
-                    dx: viewSize.w / 2 * Double(index % 2),
-                    dy: 30 + Double(Int(index / 2) * Int(viewSize.w / 2))
-                )
+            streak.place = Transform.move(
+                dx: viewSize.w / 2 * Double(index % 2),
+                dy: 30 + Double(Int(index / 2) * Int(viewSize.w / 2))
             )
+            return streak
         }.group()
     }
 }
