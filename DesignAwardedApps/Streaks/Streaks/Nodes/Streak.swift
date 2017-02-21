@@ -34,10 +34,10 @@ class Streak: Group {
         }
         
         func animateStreak(index: Int) {
-            let animation = streakContent.opacityVar.animation(to: 0.0, during: 0.1)
+            let animation = streakContent.opacityVar.animation(to: 0.0, during: 0.2)
             animation.onComplete {
                 updateStreak(index: index)
-                streakContent.opacityVar.animation(to: 1.0, during: 0.1).play()
+                streakContent.opacityVar.animation(to: 1.0, during: 0.2).play()
             }
             animation.play()
         }
