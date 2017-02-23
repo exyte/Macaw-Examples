@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'Auxy' do
-    pod 'Macaw', git: 'https://github.com/exyte/Macaw.git'
+    pod 'Macaw', git: 'https://github.com/exyte/Macaw.git', commit: '7d08c81'
 end
