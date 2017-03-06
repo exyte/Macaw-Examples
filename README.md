@@ -15,27 +15,27 @@ Macaw Examples is a place where you can find various usages of the [Macaw](https
 
 A simple application with animated bar charts. Step by step tutorial is presented on the [Getting Started](https://github.com/exyte/Macaw/wiki/Getting-started) wiki page.
 
-<img src="https://www.dropbox.com/s/766wpt4tx6bf0ph/howto-animation-1.gif?dl=1" width="460">
+<img src="http://i.imgur.com/z61fCY3.gif" width="460">
 
 ### HealthStat
 
 Activity Monitor app concept shows number of steps, running level and daily summary.
 
-<img src="https://www.dropbox.com/s/xvvifi7gbre11sc/healthstat.gif?dl=1" width="600">
+<img src="http://i.imgur.com/rQIh3qD.gif" width="600">
 
 ### PeriodicTable
 
 Do you like chemistry? This iPad application shows full power of Macaw: affine transformations, user events, animation and various effects.
 
-<img src="https://www.dropbox.com/s/b6lspzzqa80ielk/periodic-ipad.gif?dl=1" width="600">
+<img src="http://i.imgur.com/pjmxrDI.gif" width="600">
 
 ### DesignAwardedApps
 
 Recreating Auxy, Streaks and Zova interfaces with Macaw.
 
-<img src="https://www.dropbox.com/s/gwv5iqlpxzb77od/auxy.gif?dl=1" width="160">
-<img src="https://www.dropbox.com/s/5z15crzjxxbnbn7/streaks.gif?dl=1" width="160">
-<img src="https://www.dropbox.com/s/0syyxzzaa1qqumb/zova.gif?dl=1" width="160">
+<img src="http://i.imgur.com/NiBT2rv.gif" width="160">
+<img src="http://i.imgur.com/bIgHtzt.gif" width="160">
+<img src="http://i.imgur.com/Un8TJKc.gif" width="160">
 
 ## Requirements
 * iOS 8.0+ / Mac OS X 10.9+
