@@ -33,9 +33,7 @@ Do you like chemistry? This iPad application shows full power of Macaw: affine t
 
 Recreating Auxy, Streaks and Zova interfaces with Macaw.
 
-<img src="http://i.imgur.com/NiBT2rv.gif" width="160">
-<img src="http://i.imgur.com/bIgHtzt.gif" width="160">
-<img src="http://i.imgur.com/Un8TJKc.gif" width="160">
+<img src="http://i.imgur.com/NiBT2rv.gif" width="160"><img src="http://i.imgur.com/bIgHtzt.gif" width="160"><img src="http://i.imgur.com/Un8TJKc.gif" width="160">
 
 ## Requirements
 * iOS 8.0+ / Mac OS X 10.9+
