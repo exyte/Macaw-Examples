@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'GettingStarted' do
-    pod 'Macaw', '0.8.0'
+    pod 'Macaw', '0.8.1'
 end

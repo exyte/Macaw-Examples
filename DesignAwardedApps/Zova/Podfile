@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'Zova' do
-    pod 'Macaw', git: 'https://github.com/exyte/Macaw.git', commit: '7d08c81'
+    pod 'Macaw', '0.8.1'
 end

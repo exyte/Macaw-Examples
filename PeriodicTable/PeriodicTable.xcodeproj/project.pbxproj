@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3B351331926B54DD60868EB1 /* Pods_PeriodicTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4CF6D177E612B0B217F014 /* Pods_PeriodicTable.framework */; };
 		57378C421DC99FF200BDEA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C341DC99FF200BDEA57 /* AppDelegate.swift */; };
-		57378C431DC99FF200BDEA57 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57378C351DC99FF200BDEA57 /* Info.plist */; };
 		57378C441DC99FF200BDEA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3A1DC99FF200BDEA57 /* Assets.xcassets */; };
 		57378C451DC99FF200BDEA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3D1DC99FF200BDEA57 /* LaunchScreen.storyboard */; };
 		57378C461DC99FF200BDEA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3F1DC99FF200BDEA57 /* Main.storyboard */; };
@@ -144,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Exyte;
 				TargetAttributes = {
 					57378C0C1DC99ECA00BDEA57 = {
@@ -181,7 +180,6 @@
 				B014EA441DE2FAF500ADD2B2 /* table.json in Resources */,
 				57378C451DC99FF200BDEA57 /* LaunchScreen.storyboard in Resources */,
 				57378C441DC99FF200BDEA57 /* Assets.xcassets in Resources */,
-				57378C431DC99FF200BDEA57 /* Info.plist in Resources */,
 				57378C461DC99FF200BDEA57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +286,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -310,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -338,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -354,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -367,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF9127A3AA73AF1A4D6EACF3 /* Pods-PeriodicTable.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FZXCM5CJ7P;
@@ -384,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4029D615A6AC184D2F12E814 /* Pods-PeriodicTable.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FZXCM5CJ7P;
