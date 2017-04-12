@@ -51,42 +51,36 @@ class PlayButton: Group {
         super.init(contents: [border, circle, animationGroup, buttonGroup])
         
         var contentAnimation: Animation!
+        self.onTouchPressed { touchEvent in
+            circle.fill = self.pressedColor
+        }
         
-        self.onTouch { touchEvent in
-            switch touchEvent.state {
-            case .began:
-                circle.fill = self.pressedColor
-                break
-            case .moved:
-                break
-            case .ended:
-                circle.fill = self.сolor
-                let index = buttons.index { $0 == buttonGroup.contents }!
-                buttonGroup.contents = buttons[(index + 1) % buttons.count]
-                
-                animationGroup.contents = []
-                animationGroup.opacity = 1.0
-                
-                if index == 0 {
-                    contentAnimation = animationGroup.contentsVar.animation({ t in
-                        let shape = Shape(
-                            form: Arc(
-                                ellipse: Ellipse(rx: radius, ry: radius),
-                                shift: -M_PI / 2 + 0.05,
-                                extent: max(2 * M_PI * t - 0.1, 0)
-                            ),
-                            stroke: Stroke(fill: Color.white, width: 2)
-                        )
-                        return [shape]
-                    }, during: time).cycle()
-                    contentAnimation.play()
-                    self.onPlay?()
-                } else {
-                    contentAnimation.stop()
-                    animationGroup.opacityVar.animation(to: 0.0, during: 0.1).play()
-                    self.onStop?()
-                }
-                break
+        self.onTouchReleased { touchEvent in
+            circle.fill = self.сolor
+            let index = buttons.index { $0 == buttonGroup.contents }!
+            buttonGroup.contents = buttons[(index + 1) % buttons.count]
+            
+            animationGroup.contents = []
+            animationGroup.opacity = 1.0
+            
+            if index == 0 {
+                contentAnimation = animationGroup.contentsVar.animation({ t in
+                    let shape = Shape(
+                        form: Arc(
+                            ellipse: Ellipse(rx: radius, ry: radius),
+                            shift: -M_PI / 2 + 0.05,
+                            extent: max(2 * M_PI * t - 0.1, 0)
+                        ),
+                        stroke: Stroke(fill: Color.white, width: 2)
+                    )
+                    return [shape]
+                }, during: time).cycle()
+                contentAnimation.play()
+                self.onPlay?()
+            } else {
+                contentAnimation.stop()
+                animationGroup.opacityVar.animation(to: 0.0, during: 0.1).play()
+                self.onStop?()
             }
         }
     }
