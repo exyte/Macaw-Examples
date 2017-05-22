@@ -33,13 +33,13 @@ Do you like chemistry? This iPad application shows full power of Macaw: affine t
 
 Recreating Auxy, Streaks and Zova interfaces with Macaw.
 
-<img src="http://i.imgur.com/NiBT2rv.gif" width="160"><img src="http://i.imgur.com/bIgHtzt.gif" width="160"><img src="http://i.imgur.com/Un8TJKc.gif" width="160">
+<img src="http://i.imgur.com/NiBT2rv.gif" width="160"> <img src="http://i.imgur.com/bIgHtzt.gif" width="160"> <img src="http://i.imgur.com/Un8TJKc.gif" width="160">
 
 ### FanMenu
 
 [FanMenu](https://github.com/exyte/fan-menu) – an animated circular menu control.
 
-<img src="http://i.imgur.com/o6tBKW6.gif" width="160"><img src="http://i.imgur.com/Hg0GWAz.gif" width="160"><img src="http://i.imgur.com/erRavyB.gif" width="160">
+<img src="http://i.imgur.com/o6tBKW6.gif" width="160"> <img src="http://i.imgur.com/Hg0GWAz.gif" width="160"> <img src="http://i.imgur.com/erRavyB.gif" width="160"> <img src="http://i.imgur.com/1JXF60f.gif" width="160">
 
 ## Requirements
 * iOS 8.0+ / Mac OS X 10.9+
