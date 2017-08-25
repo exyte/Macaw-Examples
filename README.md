@@ -47,7 +47,7 @@ Recreating Auxy, Streaks and Zova interfaces with Macaw.
 
 ## Author
 
-This project is maintained by the [exyte](http://www.exyte.com) company, a team of experienced software engineers from the cold Siberia. We don't have bears and don't like vodka, but we love to create great applications! Just [contact us](mailto:info@exyte.com).
+This project is maintained by [exyte](http://www.exyte.com). We design and build mobile and VR/AR applications.
 
 ## License
 
