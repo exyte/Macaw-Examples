@@ -8,7 +8,7 @@ class Logo: Group {
         let ellipse = Ellipse(cx: radius, cy: radius, rx: radius, ry: radius)
         
         let border = Shape(
-            form: Arc(ellipse: ellipse, extent: 2 * M_PI),
+            form: Arc(ellipse: ellipse, extent: 2 * Double.pi),
             fill: mainColor,
             stroke: Stroke(fill: Color(val: 0x744641), width: 8)
         )
@@ -41,8 +41,8 @@ class Logo: Group {
             let animatedShape = Shape(
                 form: Arc(
                     ellipse: ellipse,
-                    shift: 1.5 * M_PI,
-                    extent: 2 * M_PI * t
+                    shift: 1.5 * Double.pi,
+                    extent: 2 * Double.pi * t
                 ),
                 stroke: Stroke(
                     fill: Color.white,
