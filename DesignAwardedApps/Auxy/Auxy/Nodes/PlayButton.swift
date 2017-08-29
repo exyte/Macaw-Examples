@@ -14,8 +14,8 @@ class PlayButton: Group {
         let border = Shape(
             form: Arc(
                 ellipse: Ellipse(rx: radius, ry: radius),
-                shift: -M_PI / 2 + 0.05,
-                extent: 2 * M_PI - 0.1
+                shift: -Double.pi / 2 + 0.05,
+                extent: 2 * Double.pi - 0.1
             ),
             stroke: Stroke(
                 fill: Color.rgba(r: 219, g: 222, b: 227, a: 0.3),
@@ -68,8 +68,8 @@ class PlayButton: Group {
                     let shape = Shape(
                         form: Arc(
                             ellipse: Ellipse(rx: radius, ry: radius),
-                            shift: -M_PI / 2 + 0.05,
-                            extent: max(2 * M_PI * t - 0.1, 0)
+                            shift: -Double.pi / 2 + 0.05,
+                            extent: max(2 * Double.pi * t - 0.1, 0)
                         ),
                         stroke: Stroke(fill: Color.white, width: 2)
                     )
