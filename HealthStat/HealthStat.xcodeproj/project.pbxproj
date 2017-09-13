@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10E3D2228D87C77A1485DB20 /* Pods_HealthStat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8A09E5FAA2F971819F60A5 /* Pods_HealthStat.framework */; };
+		32571A19F0D00E6AA40DADFB /* Pods_HealthStat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8A09E5FAA2F971819F60A5 /* Pods_HealthStat.framework */; };
 		6677A6B01DEDAFB000052504 /* ActivityMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A6AF1DEDAFB000052504 /* ActivityMonitorViewController.swift */; };
 		6677A6B31DEDB01000052504 /* BestScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A6B21DEDB01000052504 /* BestScoreView.swift */; };
 		6677A6B51DEDB38000052504 /* TotalOfStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677A6B41DEDB38000052504 /* TotalOfStepsView.swift */; };
@@ -21,18 +21,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3ACBFFB822BA489F202823D2 /* Pods-HealthStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat.debug.xcconfig"; sourceTree = "<group>"; };
-		3E818EE7B940249E0FF6BD67 /* Pods-HealthStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat.release.xcconfig"; sourceTree = "<group>"; };
 		6677A6AF1DEDAFB000052504 /* ActivityMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMonitorViewController.swift; sourceTree = "<group>"; };
 		6677A6B21DEDB01000052504 /* BestScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BestScoreView.swift; path = Views/BestScoreView.swift; sourceTree = "<group>"; };
 		6677A6B41DEDB38000052504 /* TotalOfStepsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TotalOfStepsView.swift; path = Views/TotalOfStepsView.swift; sourceTree = "<group>"; };
 		6677A6B61DEDB45600052504 /* RunningLevelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunningLevelView.swift; path = Views/RunningLevelView.swift; sourceTree = "<group>"; };
 		6677A6B81DEDB4BE00052504 /* DailySummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailySummaryView.swift; path = Views/DailySummaryView.swift; sourceTree = "<group>"; };
+		7126B417DA27E468BEBFDFAB /* Pods-HealthStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat.debug.xcconfig"; sourceTree = "<group>"; };
 		72E228DB1DDD7475008E7B5B /* HealthStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E228DE1DDD7475008E7B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E228E51DDD7475008E7B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E228E81DDD7475008E7B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E228EA1DDD7475008E7B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A850BC390C1A7DF870DBD02B /* Pods-HealthStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthStat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat.release.xcconfig"; sourceTree = "<group>"; };
 		B097D9FF1DE420C7000062E4 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		B097DA011DE420DD000062E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ED8A09E5FAA2F971819F60A5 /* Pods_HealthStat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthStat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E3D2228D87C77A1485DB20 /* Pods_HealthStat.framework in Frameworks */,
+				32571A19F0D00E6AA40DADFB /* Pods_HealthStat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +82,8 @@
 			children = (
 				72E228DD1DDD7475008E7B5B /* HealthStat */,
 				72E228DC1DDD7475008E7B5B /* Products */,
-				7993914983B2CC4A03236101 /* Pods */,
 				BEECA859F8170E5C4C0278BB /* Frameworks */,
+				FF2EAE4087BD17F48934B3C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,21 +110,21 @@
 			path = HealthStat;
 			sourceTree = "<group>";
 		};
-		7993914983B2CC4A03236101 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3ACBFFB822BA489F202823D2 /* Pods-HealthStat.debug.xcconfig */,
-				3E818EE7B940249E0FF6BD67 /* Pods-HealthStat.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		BEECA859F8170E5C4C0278BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED8A09E5FAA2F971819F60A5 /* Pods_HealthStat.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF2EAE4087BD17F48934B3C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7126B417DA27E468BEBFDFAB /* Pods-HealthStat.debug.xcconfig */,
+				A850BC390C1A7DF870DBD02B /* Pods-HealthStat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Julia Bulantseva";
 				TargetAttributes = {
 					72E228DA1DDD7475008E7B5B = {
@@ -241,7 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -284,7 +284,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -292,7 +294,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -335,7 +341,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -343,7 +351,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -372,7 +384,7 @@
 		};
 		72E229041DDD7475008E7B5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ACBFFB822BA489F202823D2 /* Pods-HealthStat.debug.xcconfig */;
+			baseConfigurationReference = 7126B417DA27E468BEBFDFAB /* Pods-HealthStat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -382,14 +394,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.HealthStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		72E229051DDD7475008E7B5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E818EE7B940249E0FF6BD67 /* Pods-HealthStat.release.xcconfig */;
+			baseConfigurationReference = A850BC390C1A7DF870DBD02B /* Pods-HealthStat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -399,7 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.HealthStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

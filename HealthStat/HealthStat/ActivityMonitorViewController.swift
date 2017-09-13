@@ -20,7 +20,7 @@ open class ActivityMonitorViewController: UIViewController {
         self.perform(#selector(animateViews), with: .none, afterDelay: withDelay)
     }
     
-    open func animateViews() {
+    @objc open func animateViews() {
         bestScoreView.play()
         totalStepsView.play()
         runningLevelView.play()
