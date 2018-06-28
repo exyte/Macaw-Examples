@@ -86,7 +86,7 @@ class PeriodicTable: MacawView {
 			let layer = (i % 25)
 			let sign = ((layer % 5) % 2) == 0 ? 1.0 : -1.0
 			let sign2 = (i / 25) % 2 == 0 ? 1.0 : -1.0
-			let newPlace = GeomUtils.concat(t1: node.place, t2: Transform.move(dx: 0, dy: sign * sign2 * 300))
+			let newPlace = node.place.concat(with: .move(dx: 0, dy: sign * sign2 * 300))
 			let anim = node.placeVar.animation(from: node.place, to: newPlace, during: 10.0).easing(.linear)
 			anim.play()
 			animations.append(anim)
