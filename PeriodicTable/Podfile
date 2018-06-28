@@ -1,5 +1,6 @@
+platform :ios, '9.0'
 use_frameworks!
 
 target 'PeriodicTable' do
-	pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git', :branch => 'swift4'
+	pod 'Macaw'
 end

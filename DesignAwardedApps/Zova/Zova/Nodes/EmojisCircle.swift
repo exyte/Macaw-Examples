@@ -32,7 +32,7 @@ class EmojisCircle: Group {
     }
     
     class func emojiPlace(index: Int, d: Double) -> Transform {
-        let alpha = 2 * M_PI / 10.0 * Double(index)
+        let alpha = 2 * .pi / 10.0 * Double(index)
         return Transform.move(
             dx: cos(alpha) * d,
             dy: sin(alpha) * d
