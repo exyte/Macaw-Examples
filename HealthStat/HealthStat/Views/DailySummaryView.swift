@@ -73,6 +73,7 @@ open class DailySummaryView: MacawView {
         rootNode.contents.append(animationGroup)
         
         self.node = [text, rootNode].group()
+        self.backgroundColor = UIColor(cgColor: Color(val: 0x4a2e7d).toCG())
     }
     
     private func createAnimations() {

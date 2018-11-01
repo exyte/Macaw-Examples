@@ -37,8 +37,8 @@ class ActivityView: MacawView {
         bar = ActivityBar()
         bar.place = Transform.move(dx: 20.0, dy: viewSize.h - 160.0)
 
-        
         super.init(node: Group(contents: [texts, circle, bar]), coder: aDecoder)
+        backgroundColor = UIColor(cgColor: Color(val: 0x269CFE).toCG())
     }
     
     var customizeAnimation: Animation?

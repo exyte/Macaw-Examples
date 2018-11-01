@@ -92,6 +92,7 @@ open class RunningLevelView: MacawView {
         }
         
         self.node = [text, backgroundGroup, mainGroup, captionsGroup].group()
+        self.backgroundColor = UIColor(cgColor: Color(val: 0x5B2FA1).toCG())
     }
     
     private func createAnimations() {
