@@ -180,6 +180,7 @@ open class BestScoreView: MacawView {
         
         let chartGroup = [chartLinesGroup, milesCaptionGroup].group(place: Transform.move(dx: chartCenterX, dy: 90))
         self.node = [text, chartGroup].group()
+        self.backgroundColor = UIColor(cgColor: Color(val: 0x4a2e7d).toCG())
     }
     
     private func createAnimations() {

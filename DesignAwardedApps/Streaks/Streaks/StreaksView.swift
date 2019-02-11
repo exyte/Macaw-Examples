@@ -11,6 +11,7 @@ class StreaksView: MacawView {
             w: Double(UIScreen.main.bounds.width),
             h: Double(UIScreen.main.bounds.height)
         )
+        self.backgroundColor = UIColor(cgColor: Color(val: 0xFD704D).toCG())
         self.node = streaks()        
     }
     
