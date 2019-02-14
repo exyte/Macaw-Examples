@@ -192,7 +192,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -203,7 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE811CF4922E65260B82C3B4 /* [CP] Check Pods Manifest.lock */ = {

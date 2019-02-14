@@ -204,7 +204,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HealthStat/Pods-HealthStat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -215,7 +215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthStat/Pods-HealthStat-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthStat/Pods-HealthStat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D261930D591667825C7C27AA /* [CP] Check Pods Manifest.lock */ = {
