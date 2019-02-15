@@ -23,6 +23,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         SecondaryViewController(),
         AnticipationViewController(),
         RhythmViewController(),
+        OverlappingViewController()
     ]
 
     override func viewDidLoad() {

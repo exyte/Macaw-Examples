@@ -22,16 +22,17 @@ class FocusViewController: BaseViewController {
         )
         
         let innerCircle = Shape(form: Circle(cx: 0, cy: 0, r: radius), fill: color, place: .move(dx: 250, dy: 50))
-        innerCircle.placeVar.animation(to: innerCircle.place.scale(sx: 0.9, sy: 0.9), during: 0.4).autoreversed().cycle().play()
+        let innerAnimation = innerCircle.placeVar.animation(to: innerCircle.place.scale(sx: 0.9, sy: 0.9), during: 0.4).autoreversed()
         
         let outerCircle = Shape(form: Circle(cx: 0, cy: 0, r: radius), fill: color)
         let outerGroup = Group(contents: [outerCircle], place: .move(dx: 250, dy: 50))
-        outerGroup.contentsVar.animation({ t in
+        let outerAnimation = outerGroup.contentsVar.animation({ t in
             let newColor = color.with(a: 1 - t)
             return [Circle(r: (1 + t) * radius).fill(with: newColor)]
-            }, during: 0.8).cycle().play()
-        
-        svgView.node = Group(contents: [rect, innerCircle, outerGroup])
+            }, during: 0.8)
+
+        animation = [innerAnimation, outerAnimation].combine().cycle()
+        svgView.node = [rect, innerCircle, outerGroup].group()
     }
 
     override func didReceiveMemoryWarning() {

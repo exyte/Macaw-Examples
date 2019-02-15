@@ -26,7 +26,7 @@ class BaseViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         if let animation = animation {
-            animation.pause()
+            animation.stop()
         }
     }
 
@@ -39,7 +39,7 @@ class BaseViewController: UIViewController {
 
 }
 
-func createMovingRect(easing: Easing, rect: Rect, place: Transform, distance: Double = 200.0, distortion: Double = 10.0, radius: Double = 5.0, delay: Double = 0.5, during: Double = 0.5) -> Node {
+func createMovingRect(easing: Easing, rect: Rect, place: Transform, distance: Double = 200.0, distortion: Double = 10.0, radius: Double = 5.0, delay: Double = 0.5, during: Double = 1.0) -> (Node, Animation) {
     let g = Group(contents: [Shape(form: RoundRect(rect: rect, rx: radius, ry: radius), fill: color)], place: place)
     let there = g.contentsVar.animation( { (t) -> [Node] in
         return [Shape(form: createRightDistortedRoundedRectBothways(parameter: t, distortion: distortion, width: rect.w, height: rect.h), fill: color, place: .move(dx: t * distance, dy: 0))]
@@ -47,8 +47,7 @@ func createMovingRect(easing: Easing, rect: Rect, place: Transform, distance: Do
     let back = g.contentsVar.animation( { (t) -> [Node] in
         return [Shape(form: createLeftDistortedRoundedRectBothways(parameter: t, distortion: distortion, width: rect.w, height: rect.h), fill: color, place: .move(dx: distance + t * -distance, dy: 0))]
     }, during: during, delay: delay).easing(easing)
-    [there, back].sequence().cycle().play()
-    return g
+    return (g, [there, back].sequence())
 }
 
 func createRightDistortedRoundedRectBothways(parameter: Double = 1.0, distortion: Double = 10.0, radius: Double = 5.0, width: Double = 60.0, height: Double = 0.0) -> Path {

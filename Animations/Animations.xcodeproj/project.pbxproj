@@ -20,6 +20,7 @@
 		5B8AF47F211C207800CBB4A7 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AF47E211C207800CBB4A7 /* SecondaryViewController.swift */; };
 		5B8AF481211C49FE00CBB4A7 /* AnticipationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AF480211C49FE00CBB4A7 /* AnticipationViewController.swift */; };
 		5B8AF483211EB41700CBB4A7 /* RhythmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AF482211EB41700CBB4A7 /* RhythmViewController.swift */; };
+		5BE4564321F9D8B800EF628E /* OverlappingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4564121F9D8B700EF628E /* OverlappingViewController.swift */; };
 		ABA7B57A2A29EAED037178E2 /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E65A6C81BB83C69A942F60 /* Pods_Animations.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		5B8AF47E211C207800CBB4A7 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
 		5B8AF480211C49FE00CBB4A7 /* AnticipationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnticipationViewController.swift; sourceTree = "<group>"; };
 		5B8AF482211EB41700CBB4A7 /* RhythmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmViewController.swift; sourceTree = "<group>"; };
+		5BE4564121F9D8B700EF628E /* OverlappingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlappingViewController.swift; sourceTree = "<group>"; };
 		92E65A6C81BB83C69A942F60 /* Pods_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94404DAA79B4B165ABE9246 /* Pods-Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animations/Pods-Animations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				5B8AF47E211C207800CBB4A7 /* SecondaryViewController.swift */,
 				5B8AF480211C49FE00CBB4A7 /* AnticipationViewController.swift */,
 				5B8AF482211EB41700CBB4A7 /* RhythmViewController.swift */,
+				5BE4564121F9D8B700EF628E /* OverlappingViewController.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				5B0DF30A21195F7B00F82AC8 /* MenuViewController.swift in Sources */,
 				5B0DF325211AAD0000F82AC8 /* FocusViewController.swift in Sources */,
 				5B0DF30821195F7B00F82AC8 /* AppDelegate.swift in Sources */,
+				5BE4564321F9D8B800EF628E /* OverlappingViewController.swift in Sources */,
 				5B0DF31B2119613300F82AC8 /* MaterialViewController.swift in Sources */,
 				5B0DF31F211A9E1100F82AC8 /* TrajectoryViewController.swift in Sources */,
 				5B8AF47F211C207800CBB4A7 /* SecondaryViewController.swift in Sources */,
@@ -390,14 +394,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Animations/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exyte.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -409,14 +413,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Animations/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exyte.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

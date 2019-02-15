@@ -26,7 +26,7 @@ class SecondaryViewController: BaseViewController {
         
         let springyGrow = springyShape.placeVar.animation(to: springyShape.place.scale(sx: coeff, sy: coeff).move(dx: posDelta, dy: posDelta), during: duration, delay: 0.5).easing(.elasticInOut(elasticity: 5))
         let springyShrink = springyShape.placeVar.animation(from: springyShape.place.scale(sx: coeff, sy: coeff).move(dx: posDelta, dy: posDelta), to: springyShape.place, during: duration, delay: 0.5).easing(.elasticInOut(elasticity: 5))
-        [springyGrow, springyShrink].sequence().cycle().play()
+        let growingAnimation = [springyGrow, springyShrink].sequence()
         
         let rotatingShape = Shape(
             form: RoundRect(rect: Rect(w: 50, h: 50), rx: 5, ry: 5),
@@ -45,8 +45,9 @@ class SecondaryViewController: BaseViewController {
                           fill: color,
                           place: GeomUtils.centerRotation(node: rotatingShape, place: rotatingShape.place, angle: (.pi*5/4).interpolate(0, progress: t)))]
         }, during: duration, delay: 0.5)
-        [there, back].sequence().cycle().play()
-        
+        let rotationAnimation = [there, back].sequence()
+
+        animation = [growingAnimation, rotationAnimation].combine().cycle()
         svgView.node = [springyShape, g].group()
     }
 

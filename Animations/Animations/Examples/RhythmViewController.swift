@@ -48,7 +48,6 @@ class RhythmViewController: BaseViewController {
         
         let littleGroup = Group(contents: [r1, r2, r3, l1, l2, l3], place: .move(dx: 200, dy: 120))
         
-        
         let thingy = Shape(form: Line(x1: 0, y1: 0, x2: 0, y2: 10), stroke: Stroke(fill: secondaryColor, width: 2))
         
         let thingyMoves1 = thingy.placeVar.animation(from: .move(dx: 200, dy: 120), to: thingy.place.move(dx: 214, dy: 120), during: duration, delay: delay)
@@ -58,14 +57,7 @@ class RhythmViewController: BaseViewController {
         
         let thingyAnimations = [thingyMoves1, thingyMoves2, thingyMoves3, thingyMoves4].sequence()
         
-        // numbers
-        
-//        let text = Text(text: "1", font: Font(name: "Helvetica-Bold", size: 20, weight: "bold"), fill: color, align: .mid, place: .move(dx: 235, dy: 140))
-//        
-//        text.placeVar.animation(to: .scale(sx: 0, sy: 0))
-        
-        [rectAnimations, thingyAnimations].combine().cycle().play()
-        
+        animation = [rectAnimations, thingyAnimations].combine().cycle()
         svgView.node = [rect, littleGroup, thingy].group()
     }
 
