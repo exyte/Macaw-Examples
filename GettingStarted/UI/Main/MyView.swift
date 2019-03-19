@@ -31,8 +31,9 @@ class MyView: MacawView {
             place: .move(dx: 15, dy: 0), opaque: false)
         
         let image = Image(src: "charts.png", w: 30, place: .move(dx: -40, dy: -15), opaque: false)
-        
-        return Group(contents: [shape, text, image], place: .move(dx: 375 / 2, dy: 75))
+        let dx = UIScreen.main.bounds.width / 2
+
+        return Group(contents: [shape, text, image], place: .move(dx: Double(dx), dy: 75))
     }
     
     private static func createChart(_ button: Node) -> Group {
