@@ -14,10 +14,21 @@ class StudioView: MacawView {
         
     required init?(coder aDecoder: NSCoder) {
         super.init(node: Group(contents: []), coder: aDecoder)
-        
+
+        let screenWidth = UIScreen.main.bounds.width
+        var screenHeight = UIScreen.main.bounds.height
+
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.windows.first
+            let topPadding = window?.safeAreaInsets.top ?? 0
+            let bottomPadding = window?.safeAreaInsets.bottom ?? 0
+
+            screenHeight -= topPadding + bottomPadding
+        }
+
         viewSize = Size(
-            w: Double(UIScreen.main.bounds.width),
-            h: Double(UIScreen.main.bounds.height)
+            w: Double(screenWidth),
+            h: Double(screenHeight)
         )
         
         cellSize = Size(
