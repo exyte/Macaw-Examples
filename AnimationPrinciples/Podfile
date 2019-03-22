@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'AnimationPrinciples' do
+	pod 'Macaw'
+end
