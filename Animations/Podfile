@@ -1,5 +1,0 @@
-use_frameworks!
-
-target 'Animations' do
-	pod 'Macaw', :git => 'https://github.com/f3dm76/Macaw.git', :branch => 'master'
-end
