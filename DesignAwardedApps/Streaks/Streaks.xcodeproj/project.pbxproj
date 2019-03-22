@@ -190,7 +190,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Streaks/Pods-Streaks-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Streaks/Pods-Streaks-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -201,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Streaks/Pods-Streaks-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Streaks/Pods-Streaks-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B5E472E74D8D8D3830F85090 /* [CP] Check Pods Manifest.lock */ = {

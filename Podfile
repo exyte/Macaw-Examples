@@ -1,20 +1,42 @@
 platform :ios, '9.0'
 use_frameworks!
 
-workspace 'OB.xcworkspace'
+def macaw
+  pod 'Macaw'
+end
 
-abstract_target 'OB' do
-    pod 'Macaw', :path => "/Users/f3dm76/Work/MacawFork"
+target ‘Auxy’ do
+   workspace ‘Auxy’
+   project ‘DesignAwardedApps/Auxy/Auxy.xcodeproj’
+   macaw
+end
 
-    target 'GettingStarted' do
-        project 'GettingStarted/GettingStarted.xcodeproj'
-    end
+target ‘Streaks’ do
+   workspace ‘Streaks’
+   xcodeproj ‘DesignAwardedApps/Streaks/Streaks.xcodeproj’
+   macaw
+end
 
-    target 'HealthStat' do
-        project 'HealthStat/HealthStat.xcodeproj'
-    end
+target ‘Zova’ do
+   workspace ‘Zova’
+   project ‘DesignAwardedApps/Zova/Zova.xcodeproj’
+   macaw
+end
 
-    target 'PeriodicTable' do
-        project 'PeriodicTable/PeriodicTable.xcodeproj'
-    end
+target ‘GettingStarted’ do
+   workspace ‘GettingStarted’
+   xcodeproj ‘GettingStarted/GettingStarted.xcodeproj’
+   macaw
+end
+
+target ‘HealthStat’ do
+   workspace ‘HealthStat’
+   xcodeproj ‘HealthStat/HealthStat.xcodeproj’
+   macaw
+end
+
+target ‘PeriodicTable’ do
+   workspace ‘PeriodicTable’
+   xcodeproj ‘PeriodicTable/PeriodicTable.xcodeproj’
+   macaw
 end

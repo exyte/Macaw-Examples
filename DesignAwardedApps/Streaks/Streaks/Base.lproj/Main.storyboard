@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,19 +14,15 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-qr-lHL" customClass="StreaksView" customModule="Streaks" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNX-qN-fRm">
-                                        <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="607" width="375" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="Su4-4W-o7Q">
                                                 <rect key="frame" x="30" y="0.0" width="25" height="25"/>
@@ -69,13 +65,14 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.4392156862745098" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fj5-qr-lHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="15n-fb-Udi"/>
-                            <constraint firstAttribute="trailing" secondItem="fj5-qr-lHL" secondAttribute="trailing" id="HKb-Ob-zTh"/>
-                            <constraint firstItem="fj5-qr-lHL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kh6-0k-UNI"/>
-                            <constraint firstAttribute="bottom" secondItem="fj5-qr-lHL" secondAttribute="bottom" id="xPj-rN-3Ym"/>
+                            <constraint firstItem="fj5-qr-lHL" firstAttribute="leading" secondItem="U6W-3R-eqM" secondAttribute="leading" id="15n-fb-Udi"/>
+                            <constraint firstItem="U6W-3R-eqM" firstAttribute="trailing" secondItem="fj5-qr-lHL" secondAttribute="trailing" id="HKb-Ob-zTh"/>
+                            <constraint firstItem="fj5-qr-lHL" firstAttribute="top" secondItem="U6W-3R-eqM" secondAttribute="top" id="Kh6-0k-UNI"/>
+                            <constraint firstItem="U6W-3R-eqM" firstAttribute="bottom" secondItem="fj5-qr-lHL" secondAttribute="bottom" id="xPj-rN-3Ym"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="U6W-3R-eqM"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -86,17 +83,12 @@
         <scene sceneID="vLD-oi-e5v">
             <objects>
                 <viewController storyboardIdentifier="AddTaskController" id="aNy-Pg-0QM" customClass="AddTaskViewController" customModule="Streaks" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ieC-qC-Nhv"/>
-                        <viewControllerLayoutGuide type="bottom" id="FAw-WC-6yA"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="q1i-pg-8mA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-Jo-HTB">
-                                <rect key="frame" x="133" y="28" width="109" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-Jo-HTB">
+                                <rect key="frame" x="136.5" y="28" width="102.5" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,8 +107,11 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="yXD-Ny-Xhm" firstAttribute="leading" secondItem="q1i-pg-8mA" secondAttribute="leadingMargin" id="Gac-OY-ahZ"/>
-                            <constraint firstItem="yXD-Ny-Xhm" firstAttribute="top" secondItem="ieC-qC-Nhv" secondAttribute="bottom" constant="3" id="PqI-ou-HGH"/>
+                            <constraint firstItem="yXD-Ny-Xhm" firstAttribute="top" secondItem="I8q-yR-ytc" secondAttribute="top" constant="3" id="PqI-ou-HGH"/>
+                            <constraint firstItem="lUJ-Jo-HTB" firstAttribute="top" secondItem="I8q-yR-ytc" secondAttribute="top" constant="8" id="lv8-7S-lxb"/>
+                            <constraint firstItem="lUJ-Jo-HTB" firstAttribute="centerX" secondItem="q1i-pg-8mA" secondAttribute="centerX" id="sEu-Fx-8kj"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="I8q-yR-ytc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9J-W4-Mj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,9 +120,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="25" height="25"/>
-        <image name="close" width="30" height="30"/>
-        <image name="settings" width="25" height="25"/>
-        <image name="workout" width="25" height="22"/>
+        <image name="calendar" width="50" height="50"/>
+        <image name="close" width="60" height="60"/>
+        <image name="settings" width="50" height="50"/>
+        <image name="workout" width="50" height="44"/>
     </resources>
 </document>
