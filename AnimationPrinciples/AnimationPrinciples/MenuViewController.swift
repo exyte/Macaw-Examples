@@ -8,11 +8,6 @@
 
 import UIKit
 
-//func classFromString(_ className: String) -> AnyClass! {
-//    let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
-//    return NSClassFromString("\(namespace).\(className)")!
-//}
-
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     fileprivate var viewControllers = [
@@ -32,7 +27,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menu_cell")!
-        cell.textLabel?.text = String(describing: type(of: viewControllers[indexPath.row]))
+        cell.textLabel?.text = String(describing: type(of: viewControllers[indexPath.row])).replacingOccurrences(of: "ViewController", with: "")
         return cell
     }
     
