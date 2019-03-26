@@ -57,7 +57,7 @@ class PlayButton: Group {
         
         self.onTouchReleased { touchEvent in
             circle.fill = self.сolor
-            let index = buttons.index { $0 == buttonGroup.contents }!
+            let index = buttons.firstIndex { $0 == buttonGroup.contents }!
             buttonGroup.contents = buttons[(index + 1) % buttons.count]
             
             animationGroup.contents = []

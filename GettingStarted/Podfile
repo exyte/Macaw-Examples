@@ -2,5 +2,5 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'GettingStarted' do
-	pod 'Macaw'
+	pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git', :branch => 'master'
 end

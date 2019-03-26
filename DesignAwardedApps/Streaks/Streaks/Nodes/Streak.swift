@@ -48,7 +48,7 @@ class Streak: Group {
         
         self.onTap { tapEvent in
             if !addTask {
-                let index = contents.index { $0 == streakContent.contents }!
+                let index = contents.firstIndex { $0 == streakContent.contents }!
                 animateStreak(index: (index + 1) % contents.count)
             }
         }
