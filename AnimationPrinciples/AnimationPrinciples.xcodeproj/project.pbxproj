@@ -198,7 +198,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		47EEEF6D4B1A2A2ECCE16A86 /* [CP] Check Pods Manifest.lock */ = {
@@ -402,7 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exyte.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -422,7 +422,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exyte.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

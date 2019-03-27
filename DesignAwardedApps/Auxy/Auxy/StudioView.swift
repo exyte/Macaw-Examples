@@ -55,7 +55,7 @@ class StudioView: MacawView {
             let position = self.getPosition(location: tapEvent.location)
             
             if let sound = self.soundsMap[position] {
-                sounds.contents.remove(at: sounds.contents.index{$0 === sound}!)
+                sounds.contents.remove(at: sounds.contents.firstIndex{$0 === sound}!)
                 self.soundsMap.removeValue(forKey: position)
             } else {
                 let sound = Sound(position: position, size: self.cellSize)
@@ -107,7 +107,7 @@ extension Point: Hashable, Equatable {
         return lhs.x == rhs.x && lhs.y == rhs.y
     }
 
-    public var hashValue: Int {
-        return x.hashValue << 32 ^ y.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(x.hashValue << 32 ^ y.hashValue)
     }
 }
