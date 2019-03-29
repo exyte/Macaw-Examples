@@ -35,6 +35,12 @@ Recreating Auxy, Streaks and Zova interfaces with Macaw.
 
 <img src="http://i.imgur.com/NiBT2rv.gif" width="160"> <img src="http://i.imgur.com/bIgHtzt.gif" width="160"> <img src="http://i.imgur.com/Un8TJKc.gif" width="160">
 
+### LiquidSwipe
+
+Liquid Swipe concept showing amination with smooth tranformation for forward and backward swiping. Inspired with [Cuberto's framework](https://github.com/Cuberto/liquid-swipe).
+
+<img src="http://i.imgur.com/H3q2jE2.gif" width="200">
+
 ### FanMenu
 
 [FanMenu](https://github.com/exyte/fan-menu) – an animated circular menu control.
