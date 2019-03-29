@@ -46,3 +46,9 @@ target 'PeriodicTable' do
    project 'PeriodicTable/PeriodicTable.xcodeproj'
    macaw
 end
+
+target 'LiquidSwipe' do
+   workspace 'LiquidSwipe'
+   project 'LiquidSwipe/LiquidSwipe.xcodeproj'
+   macaw
+end

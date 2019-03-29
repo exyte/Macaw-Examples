@@ -1,0 +1,6 @@
+use_frameworks!
+platform :ios, '9.0'
+
+target 'LiquidSwipe' do
+	pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git', :branch => 'master'
+end

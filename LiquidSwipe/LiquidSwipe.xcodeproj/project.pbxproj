@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11CDB3DEBB1ECBD3232D9F54 /* Pods_LiquidSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8A84BBF419EF59FDBC2058 /* Pods_LiquidSwipe.framework */; };
+		5852D47E22423193000502C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D47D22423193000502C3 /* AppDelegate.swift */; };
+		5852D48022423193000502C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D47F22423193000502C3 /* ViewController.swift */; };
+		5852D48322423193000502C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5852D48122423193000502C3 /* Main.storyboard */; };
+		5852D48522423194000502C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5852D48422423194000502C3 /* Assets.xcassets */; };
+		5852D48822423194000502C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5852D48622423194000502C3 /* LaunchScreen.storyboard */; };
+		5852D49022423452000502C3 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D48F22423452000502C3 /* Wave.swift */; };
+		5852D492224234D6000502C3 /* LiquidSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D491224234D6000502C3 /* LiquidSwipeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C8A84BBF419EF59FDBC2058 /* Pods_LiquidSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3FBFE7ECD09FCC7826438F /* Pods-LiquidSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiquidSwipe.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe.release.xcconfig"; sourceTree = "<group>"; };
+		5852D47A22423193000502C3 /* LiquidSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5852D47D22423193000502C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5852D47F22423193000502C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5852D48222423193000502C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5852D48422423194000502C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5852D48722423194000502C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5852D48922423194000502C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5852D48F22423452000502C3 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		5852D491224234D6000502C3 /* LiquidSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipeView.swift; sourceTree = "<group>"; };
+		A21CE956BB5A5FC0BEE9B712 /* Pods-LiquidSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiquidSwipe.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5852D47722423193000502C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CDB3DEBB1ECBD3232D9F54 /* Pods_LiquidSwipe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C3182629C1EB377D7323006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A21CE956BB5A5FC0BEE9B712 /* Pods-LiquidSwipe.debug.xcconfig */,
+				3D3FBFE7ECD09FCC7826438F /* Pods-LiquidSwipe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5852D47122423193000502C3 = {
+			isa = PBXGroup;
+			children = (
+				5852D47C22423193000502C3 /* LiquidSwipe */,
+				5852D47B22423193000502C3 /* Products */,
+				4C3182629C1EB377D7323006 /* Pods */,
+				A35498EEBABB15835490F9CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5852D47B22423193000502C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5852D47A22423193000502C3 /* LiquidSwipe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5852D47C22423193000502C3 /* LiquidSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				5852D47D22423193000502C3 /* AppDelegate.swift */,
+				5852D47F22423193000502C3 /* ViewController.swift */,
+				5852D48122423193000502C3 /* Main.storyboard */,
+				5852D48422423194000502C3 /* Assets.xcassets */,
+				5852D48622423194000502C3 /* LaunchScreen.storyboard */,
+				5852D48922423194000502C3 /* Info.plist */,
+				5852D48F22423452000502C3 /* Wave.swift */,
+				5852D491224234D6000502C3 /* LiquidSwipeView.swift */,
+			);
+			path = LiquidSwipe;
+			sourceTree = "<group>";
+		};
+		A35498EEBABB15835490F9CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A84BBF419EF59FDBC2058 /* Pods_LiquidSwipe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5852D47922423193000502C3 /* LiquidSwipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5852D48C22423194000502C3 /* Build configuration list for PBXNativeTarget "LiquidSwipe" */;
+			buildPhases = (
+				129D2FAA3AB88BD6EB2299B5 /* [CP] Check Pods Manifest.lock */,
+				5852D47622423193000502C3 /* Sources */,
+				5852D47722423193000502C3 /* Frameworks */,
+				5852D47822423193000502C3 /* Resources */,
+				D4142AED7FF15D88E3C88E40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquidSwipe;
+			productName = LiquidSwipe;
+			productReference = 5852D47A22423193000502C3 /* LiquidSwipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5852D47222423193000502C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Exyte;
+				TargetAttributes = {
+					5852D47922423193000502C3 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 5852D47522423193000502C3 /* Build configuration list for PBXProject "LiquidSwipe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5852D47122423193000502C3;
+			productRefGroup = 5852D47B22423193000502C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5852D47922423193000502C3 /* LiquidSwipe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5852D47822423193000502C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5852D48822423194000502C3 /* LaunchScreen.storyboard in Resources */,
+				5852D48522423194000502C3 /* Assets.xcassets in Resources */,
+				5852D48322423193000502C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		129D2FAA3AB88BD6EB2299B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiquidSwipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4142AED7FF15D88E3C88E40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5852D47622423193000502C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5852D49022423452000502C3 /* Wave.swift in Sources */,
+				5852D48022423193000502C3 /* ViewController.swift in Sources */,
+				5852D47E22423193000502C3 /* AppDelegate.swift in Sources */,
+				5852D492224234D6000502C3 /* LiquidSwipeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5852D48122423193000502C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5852D48222423193000502C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5852D48622423194000502C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5852D48722423194000502C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5852D48A22423194000502C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5852D48B22423194000502C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5852D48D22423194000502C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21CE956BB5A5FC0BEE9B712 /* Pods-LiquidSwipe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FZXCM5CJ7P;
+				INFOPLIST_FILE = LiquidSwipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.LiquidSwipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5852D48E22423194000502C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3FBFE7ECD09FCC7826438F /* Pods-LiquidSwipe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FZXCM5CJ7P;
+				INFOPLIST_FILE = LiquidSwipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.LiquidSwipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5852D47522423193000502C3 /* Build configuration list for PBXProject "LiquidSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5852D48A22423194000502C3 /* Debug */,
+				5852D48B22423194000502C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5852D48C22423194000502C3 /* Build configuration list for PBXNativeTarget "LiquidSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5852D48D22423194000502C3 /* Debug */,
+				5852D48E22423194000502C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5852D47222423193000502C3 /* Project object */;
+}
