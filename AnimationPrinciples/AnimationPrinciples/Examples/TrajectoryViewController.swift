@@ -25,15 +25,16 @@ class TrajectoryViewController: BaseViewController {
         
         let m = PathSegment(type: .M, data: [origin.x, origin.y])
         let q = PathSegment(type: .Q, data: [origin.x + distance/2, origin.y - 30, origin.x + distance, origin.y])
-        circle.placeVar.animation(along: Path(segments: [m, q]), during: duration).easing(.linear).autoreversed().cycle().play()
+        let circleAnimation = circle.placeVar.animation(along: Path(segments: [m, q]), during: duration).easing(.linear)
         
         let rect = Shape(
             form: RoundRect(rect: Rect(w: 60, h: 60), rx: 5, ry: 5),
             fill: color,
             place: .move(dx: 30, dy: 150)
         )
+        let rectAnimation = rect.placeVar.animation(to: .move(dx: distance + rect.place.dx, dy: rect.place.dy), during: duration)
         
-        animation = rect.placeVar.animation(to: .move(dx: distance + rect.place.dx, dy: rect.place.dy), during: duration).autoreversed().cycle()
+        animation = [circleAnimation, rectAnimation].combine().autoreversed().cycle()
         svgView.node = Group(contents: [circle, rect])
     }
 

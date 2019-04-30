@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		835C602C167D79D90DB9919E /* Pods_Auxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C27DBE47B12715A7D782D0 /* Pods_Auxy.framework */; };
+		659CD4128A4FF280991D776F /* Pods_Macaw_Examples_Auxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEE48D3FC8E7CD4FA05924E /* Pods_Macaw_Examples_Auxy.framework */; };
 		B05266AB1E58154100FD96B6 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05266A71E58154100FD96B6 /* Grid.swift */; };
 		B05266AC1E58154100FD96B6 /* LineRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05266A81E58154100FD96B6 /* LineRunner.swift */; };
 		B05266AD1E58154100FD96B6 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05266A91E58154100FD96B6 /* PlayButton.swift */; };
@@ -21,8 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8704621B2AC1F1A872DA61C3 /* Pods-Auxy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Auxy/Pods-Auxy.release.xcconfig"; sourceTree = "<group>"; };
-		A4C27DBE47B12715A7D782D0 /* Pods_Auxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C407D39F23A8B60A67EF589 /* Pods-Macaw-Examples-Auxy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-Auxy.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Macaw-Examples-Auxy/Pods-Macaw-Examples-Auxy.release.xcconfig"; sourceTree = "<group>"; };
+		9D555D6A9D9624EB3ECD32F4 /* Pods-Macaw-Examples-Auxy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-Auxy.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Macaw-Examples-Auxy/Pods-Macaw-Examples-Auxy.debug.xcconfig"; sourceTree = "<group>"; };
+		AFEE48D3FC8E7CD4FA05924E /* Pods_Macaw_Examples_Auxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaw_Examples_Auxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05266A71E58154100FD96B6 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		B05266A81E58154100FD96B6 /* LineRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineRunner.swift; sourceTree = "<group>"; };
 		B05266A91E58154100FD96B6 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		B08BC7A31E5066D900910A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B08BC7A51E5066D900910A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08BC7AB1E50673F00910A9B /* StudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudioView.swift; sourceTree = "<group>"; };
-		F3A1EB358F6907AB3EC5D5B2 /* Pods-Auxy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auxy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Auxy/Pods-Auxy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,18 +43,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835C602C167D79D90DB9919E /* Pods_Auxy.framework in Frameworks */,
+				659CD4128A4FF280991D776F /* Pods_Macaw_Examples_Auxy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AA8C29DE1F8B4DF5F31CB40 /* Pods */ = {
+		1E0075E4DE51EEC88C0F96F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3A1EB358F6907AB3EC5D5B2 /* Pods-Auxy.debug.xcconfig */,
-				8704621B2AC1F1A872DA61C3 /* Pods-Auxy.release.xcconfig */,
+				9D555D6A9D9624EB3ECD32F4 /* Pods-Macaw-Examples-Auxy.debug.xcconfig */,
+				0C407D39F23A8B60A67EF589 /* Pods-Macaw-Examples-Auxy.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 		491EA644754AA3E3980B9EFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4C27DBE47B12715A7D782D0 /* Pods_Auxy.framework */,
+				AFEE48D3FC8E7CD4FA05924E /* Pods_Macaw_Examples_Auxy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,8 +83,8 @@
 			children = (
 				B08BC7981E5066D900910A9B /* Auxy */,
 				B08BC7971E5066D900910A9B /* Products */,
-				0AA8C29DE1F8B4DF5F31CB40 /* Pods */,
 				491EA644754AA3E3980B9EFE /* Frameworks */,
+				1E0075E4DE51EEC88C0F96F5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,7 +192,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Auxy-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Macaw-Examples-Auxy-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -205,7 +205,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Auxy/Pods-Auxy-frameworks.sh",
+				"${SRCROOT}/../../Pods/Target Support Files/Pods-Macaw-Examples-Auxy/Pods-Macaw-Examples-Auxy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -216,7 +216,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auxy/Pods-Auxy-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Macaw-Examples-Auxy/Pods-Macaw-Examples-Auxy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -371,7 +371,7 @@
 		};
 		B08BC7A91E5066D900910A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3A1EB358F6907AB3EC5D5B2 /* Pods-Auxy.debug.xcconfig */;
+			baseConfigurationReference = 9D555D6A9D9624EB3ECD32F4 /* Pods-Macaw-Examples-Auxy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Auxy/Info.plist;
@@ -385,7 +385,7 @@
 		};
 		B08BC7AA1E5066D900910A9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8704621B2AC1F1A872DA61C3 /* Pods-Auxy.release.xcconfig */;
+			baseConfigurationReference = 0C407D39F23A8B60A67EF589 /* Pods-Macaw-Examples-Auxy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Auxy/Info.plist;

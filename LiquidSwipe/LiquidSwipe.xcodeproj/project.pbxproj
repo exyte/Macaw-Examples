@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11CDB3DEBB1ECBD3232D9F54 /* Pods_LiquidSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8A84BBF419EF59FDBC2058 /* Pods_LiquidSwipe.framework */; };
 		5852D47E22423193000502C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D47D22423193000502C3 /* AppDelegate.swift */; };
 		5852D48022423193000502C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D47F22423193000502C3 /* ViewController.swift */; };
 		5852D48322423193000502C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5852D48122423193000502C3 /* Main.storyboard */; };
@@ -15,11 +14,12 @@
 		5852D48822423194000502C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5852D48622423194000502C3 /* LaunchScreen.storyboard */; };
 		5852D49022423452000502C3 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D48F22423452000502C3 /* Wave.swift */; };
 		5852D492224234D6000502C3 /* LiquidSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D491224234D6000502C3 /* LiquidSwipeView.swift */; };
+		5B577807BA2A634BDFEDA6D2 /* Pods_Macaw_Examples_LiquidSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071EEC4B82F724550C8DE8F5 /* Pods_Macaw_Examples_LiquidSwipe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C8A84BBF419EF59FDBC2058 /* Pods_LiquidSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D3FBFE7ECD09FCC7826438F /* Pods-LiquidSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiquidSwipe.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe.release.xcconfig"; sourceTree = "<group>"; };
+		071EEC4B82F724550C8DE8F5 /* Pods_Macaw_Examples_LiquidSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaw_Examples_LiquidSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8738031D442ED6847C9E6A /* Pods-Macaw-Examples-LiquidSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-LiquidSwipe.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-LiquidSwipe/Pods-Macaw-Examples-LiquidSwipe.release.xcconfig"; sourceTree = "<group>"; };
 		5852D47A22423193000502C3 /* LiquidSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5852D47D22423193000502C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5852D47F22423193000502C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +29,7 @@
 		5852D48922423194000502C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5852D48F22423452000502C3 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		5852D491224234D6000502C3 /* LiquidSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipeView.swift; sourceTree = "<group>"; };
-		A21CE956BB5A5FC0BEE9B712 /* Pods-LiquidSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiquidSwipe.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe.debug.xcconfig"; sourceTree = "<group>"; };
+		F8183ABAE918928968BC6070 /* Pods-Macaw-Examples-LiquidSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-LiquidSwipe.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-LiquidSwipe/Pods-Macaw-Examples-LiquidSwipe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,29 +37,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11CDB3DEBB1ECBD3232D9F54 /* Pods_LiquidSwipe.framework in Frameworks */,
+				5B577807BA2A634BDFEDA6D2 /* Pods_Macaw_Examples_LiquidSwipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C3182629C1EB377D7323006 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A21CE956BB5A5FC0BEE9B712 /* Pods-LiquidSwipe.debug.xcconfig */,
-				3D3FBFE7ECD09FCC7826438F /* Pods-LiquidSwipe.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		5852D47122423193000502C3 = {
 			isa = PBXGroup;
 			children = (
 				5852D47C22423193000502C3 /* LiquidSwipe */,
 				5852D47B22423193000502C3 /* Products */,
-				4C3182629C1EB377D7323006 /* Pods */,
 				A35498EEBABB15835490F9CB /* Frameworks */,
+				8C32ECE02F075AAC9444F4CD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,10 +77,19 @@
 			path = LiquidSwipe;
 			sourceTree = "<group>";
 		};
+		8C32ECE02F075AAC9444F4CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8183ABAE918928968BC6070 /* Pods-Macaw-Examples-LiquidSwipe.debug.xcconfig */,
+				3F8738031D442ED6847C9E6A /* Pods-Macaw-Examples-LiquidSwipe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A35498EEBABB15835490F9CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C8A84BBF419EF59FDBC2058 /* Pods_LiquidSwipe.framework */,
+				071EEC4B82F724550C8DE8F5 /* Pods_Macaw_Examples_LiquidSwipe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,17 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LiquidSwipe-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Macaw-Examples-LiquidSwipe-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -191,23 +187,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-LiquidSwipe/Pods-Macaw-Examples-LiquidSwipe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiquidSwipe/Pods-LiquidSwipe-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-LiquidSwipe/Pods-Macaw-Examples-LiquidSwipe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -364,7 +356,7 @@
 		};
 		5852D48D22423194000502C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A21CE956BB5A5FC0BEE9B712 /* Pods-LiquidSwipe.debug.xcconfig */;
+			baseConfigurationReference = F8183ABAE918928968BC6070 /* Pods-Macaw-Examples-LiquidSwipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,7 +375,7 @@
 		};
 		5852D48E22423194000502C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D3FBFE7ECD09FCC7826438F /* Pods-LiquidSwipe.release.xcconfig */;
+			baseConfigurationReference = 3F8738031D442ED6847C9E6A /* Pods-Macaw-Examples-LiquidSwipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

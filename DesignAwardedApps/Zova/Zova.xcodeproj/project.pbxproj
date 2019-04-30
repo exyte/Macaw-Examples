@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0B29108CA80585A268DD9C /* Pods_Macaw_Examples_Zova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D3DCB9CA5CF9C2DCA6A290 /* Pods_Macaw_Examples_Zova.framework */; };
 		B0927EE11E598DEB002BA13A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EE01E598DEB002BA13A /* AppDelegate.swift */; };
 		B0927EE31E598DEB002BA13A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EE21E598DEB002BA13A /* ViewController.swift */; };
 		B0927EE61E598DEB002BA13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0927EE41E598DEB002BA13A /* Main.storyboard */; };
@@ -17,12 +18,12 @@
 		B0927EF81E599C34002BA13A /* ActivityCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EF71E599C34002BA13A /* ActivityCircle.swift */; };
 		B0927EFA1E59A454002BA13A /* ActivityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EF91E59A454002BA13A /* ActivityBar.swift */; };
 		B0927EFC1E59DDE2002BA13A /* EmojisCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0927EFB1E59DDE2002BA13A /* EmojisCircle.swift */; };
-		E4F364E8262A1BCDE823F806 /* Pods_Zova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08A4003C401BCA5E5352E39 /* Pods_Zova.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		673CCA55C1E0591BA756677B /* Pods-Zova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zova.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zova/Pods-Zova.release.xcconfig"; sourceTree = "<group>"; };
-		AFD93785CEF5E051DB20DD67 /* Pods-Zova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zova/Pods-Zova.debug.xcconfig"; sourceTree = "<group>"; };
+		49D3DCB9CA5CF9C2DCA6A290 /* Pods_Macaw_Examples_Zova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaw_Examples_Zova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8831746D92407FD1DDF015CA /* Pods-Macaw-Examples-Zova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-Zova.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Macaw-Examples-Zova/Pods-Macaw-Examples-Zova.release.xcconfig"; sourceTree = "<group>"; };
+		89CACD72C6C07CAA34AAF01C /* Pods-Macaw-Examples-Zova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-Zova.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Macaw-Examples-Zova/Pods-Macaw-Examples-Zova.debug.xcconfig"; sourceTree = "<group>"; };
 		B0927EDD1E598DEB002BA13A /* Zova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0927EE01E598DEB002BA13A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0927EE21E598DEB002BA13A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		B0927EF71E599C34002BA13A /* ActivityCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCircle.swift; sourceTree = "<group>"; };
 		B0927EF91E59A454002BA13A /* ActivityBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBar.swift; sourceTree = "<group>"; };
 		B0927EFB1E59DDE2002BA13A /* EmojisCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojisCircle.swift; sourceTree = "<group>"; };
-		F08A4003C401BCA5E5352E39 /* Pods_Zova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,18 +43,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4F364E8262A1BCDE823F806 /* Pods_Zova.framework in Frameworks */,
+				7F0B29108CA80585A268DD9C /* Pods_Macaw_Examples_Zova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		93B43F9A142A79882F26A591 /* Pods */ = {
+		1E4D34D212DCA71AF6A61D91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AFD93785CEF5E051DB20DD67 /* Pods-Zova.debug.xcconfig */,
-				673CCA55C1E0591BA756677B /* Pods-Zova.release.xcconfig */,
+				89CACD72C6C07CAA34AAF01C /* Pods-Macaw-Examples-Zova.debug.xcconfig */,
+				8831746D92407FD1DDF015CA /* Pods-Macaw-Examples-Zova.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 			children = (
 				B0927EDF1E598DEB002BA13A /* Zova */,
 				B0927EDE1E598DEB002BA13A /* Products */,
-				93B43F9A142A79882F26A591 /* Pods */,
 				EEF8F2F8C880E94B37DCE20B /* Frameworks */,
+				1E4D34D212DCA71AF6A61D91 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +106,7 @@
 		EEF8F2F8C880E94B37DCE20B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F08A4003C401BCA5E5352E39 /* Pods_Zova.framework */,
+				49D3DCB9CA5CF9C2DCA6A290 /* Pods_Macaw_Examples_Zova.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Zova/Pods-Zova-frameworks.sh",
+				"${SRCROOT}/../../Pods/Target Support Files/Pods-Macaw-Examples-Zova/Pods-Macaw-Examples-Zova-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -198,7 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zova/Pods-Zova-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Macaw-Examples-Zova/Pods-Macaw-Examples-Zova-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3181AA2536818FAE897A7B69 /* [CP] Check Pods Manifest.lock */ = {
@@ -212,7 +212,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Zova-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Macaw-Examples-Zova-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,7 +369,7 @@
 		};
 		B0927EF01E598DEB002BA13A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFD93785CEF5E051DB20DD67 /* Pods-Zova.debug.xcconfig */;
+			baseConfigurationReference = 89CACD72C6C07CAA34AAF01C /* Pods-Macaw-Examples-Zova.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zova/Info.plist;
@@ -383,7 +383,7 @@
 		};
 		B0927EF11E598DEB002BA13A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 673CCA55C1E0591BA756677B /* Pods-Zova.release.xcconfig */;
+			baseConfigurationReference = 8831746D92407FD1DDF015CA /* Pods-Macaw-Examples-Zova.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zova/Info.plist;
