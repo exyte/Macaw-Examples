@@ -1,6 +1,0 @@
-platform :ios, '9.0'
-use_frameworks!
-
-target 'Streaks' do
-	pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git', :branch => 'master'
-end

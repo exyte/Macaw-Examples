@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28FB246E61AECF408CE9C1A4 /* Pods_GettingStarted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5945DD955E408CED542A610E /* Pods_GettingStarted.framework */; };
 		57378C2E1DC99F4300BDEA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C221DC99F4300BDEA57 /* AppDelegate.swift */; };
 		57378C301DC99F4300BDEA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57378C261DC99F4300BDEA57 /* Assets.xcassets */; };
 		57378C311DC99F4300BDEA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57378C291DC99F4300BDEA57 /* LaunchScreen.storyboard */; };
@@ -15,11 +14,11 @@
 		57378C331DC99F4300BDEA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C2D1DC99F4300BDEA57 /* ViewController.swift */; };
 		58AB71021DD23F2300EE8A09 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71011DD23F2300EE8A09 /* MyView.swift */; };
 		58AB71041DD2401100EE8A09 /* charts.png in Resources */ = {isa = PBXBuildFile; fileRef = 58AB71031DD2401100EE8A09 /* charts.png */; };
+		F94E1CCDE4949C165D8356BB /* Pods_Macaw_Examples_GettingStarted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0443E5F032BBFEE0BED05D96 /* Pods_Macaw_Examples_GettingStarted.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29B36087B8AB1C1B13E6F030 /* Pods-GettingStarted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GettingStarted.release.xcconfig"; path = "Pods/Target Support Files/Pods-GettingStarted/Pods-GettingStarted.release.xcconfig"; sourceTree = "<group>"; };
-		55C1628E6820A9C25B3B4086 /* Pods-GettingStarted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GettingStarted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GettingStarted/Pods-GettingStarted.debug.xcconfig"; sourceTree = "<group>"; };
+		0443E5F032BBFEE0BED05D96 /* Pods_Macaw_Examples_GettingStarted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaw_Examples_GettingStarted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57378BEF1DC99EAA00BDEA57 /* GettingStarted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GettingStarted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57378C221DC99F4300BDEA57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57378C241DC99F4300BDEA57 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,7 +28,8 @@
 		57378C2D1DC99F4300BDEA57 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58AB71011DD23F2300EE8A09 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		58AB71031DD2401100EE8A09 /* charts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charts.png; sourceTree = "<group>"; };
-		5945DD955E408CED542A610E /* Pods_GettingStarted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GettingStarted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BE41869222FCC605DCD4A4 /* Pods-Macaw-Examples-GettingStarted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-GettingStarted.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-GettingStarted/Pods-Macaw-Examples-GettingStarted.debug.xcconfig"; sourceTree = "<group>"; };
+		EE46D8DBEC6F87DBDE013CA3 /* Pods-Macaw-Examples-GettingStarted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-GettingStarted.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-GettingStarted/Pods-Macaw-Examples-GettingStarted.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FB246E61AECF408CE9C1A4 /* Pods_GettingStarted.framework in Frameworks */,
+				F94E1CCDE4949C165D8356BB /* Pods_Macaw_Examples_GettingStarted.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,18 +47,9 @@
 		087C5857514D8A9EDDB408C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5945DD955E408CED542A610E /* Pods_GettingStarted.framework */,
+				0443E5F032BBFEE0BED05D96 /* Pods_Macaw_Examples_GettingStarted.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		49A5214D52B1BC671A0CDB44 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55C1628E6820A9C25B3B4086 /* Pods-GettingStarted.debug.xcconfig */,
-				29B36087B8AB1C1B13E6F030 /* Pods-GettingStarted.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		57378BE61DC99EA900BDEA57 = {
@@ -70,8 +61,8 @@
 				58AB71031DD2401100EE8A09 /* charts.png */,
 				57378C241DC99F4300BDEA57 /* Info.plist */,
 				57378BF01DC99EAA00BDEA57 /* Products */,
-				49A5214D52B1BC671A0CDB44 /* Pods */,
 				087C5857514D8A9EDDB408C6 /* Frameworks */,
+				73D68D6BF631810461D317BB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +99,15 @@
 				58AB71011DD23F2300EE8A09 /* MyView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		73D68D6BF631810461D317BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BE41869222FCC605DCD4A4 /* Pods-Macaw-Examples-GettingStarted.debug.xcconfig */,
+				EE46D8DBEC6F87DBDE013CA3 /* Pods-Macaw-Examples-GettingStarted.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +189,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GettingStarted/Pods-GettingStarted-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-GettingStarted/Pods-Macaw-Examples-GettingStarted-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -200,7 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GettingStarted/Pods-GettingStarted-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-GettingStarted/Pods-Macaw-Examples-GettingStarted-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BCC3A08BF7AA7884E3743C43 /* [CP] Check Pods Manifest.lock */ = {
@@ -214,7 +214,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GettingStarted-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Macaw-Examples-GettingStarted-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,7 +369,7 @@
 		};
 		57378C021DC99EAA00BDEA57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55C1628E6820A9C25B3B4086 /* Pods-GettingStarted.debug.xcconfig */;
+			baseConfigurationReference = 62BE41869222FCC605DCD4A4 /* Pods-Macaw-Examples-GettingStarted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -385,7 +385,7 @@
 		};
 		57378C031DC99EAA00BDEA57 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29B36087B8AB1C1B13E6F030 /* Pods-GettingStarted.release.xcconfig */;
+			baseConfigurationReference = EE46D8DBEC6F87DBDE013CA3 /* Pods-Macaw-Examples-GettingStarted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

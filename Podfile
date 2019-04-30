@@ -1,54 +1,49 @@
 platform :ios, '9.0'
 use_frameworks!
 
-def macaw
-  pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git', :branch => 'master'
-end
+workspace 'Macaw-Examples.xcworkspace'
 
-target 'AnimationPrinciples' do 
-   workspace 'AnimationPrinciples'
-   project 'AnimationPrinciples/AnimationPrinciples.xcodeproj'
-   macaw
-end	
+project 'AnimationPrinciples/AnimationPrinciples.xcodeproj'
+project 'DesignAwardedApps/Auxy/Auxy.xcodeproj'
+project 'DesignAwardedApps/Streaks/Streaks.xcodeproj'
+project 'DesignAwardedApps/Zova/Zova.xcodeproj'
+project 'GettingStarted/GettingStarted.xcodeproj'
+project 'HealthStat/HealthStat.xcodeproj'
+project 'PeriodicTable/PeriodicTable.xcodeproj'
+project 'LiquidSwipe/LiquidSwipe.xcodeproj'
 
-target 'Auxy' do
-   workspace 'Auxy'
-   project 'DesignAwardedApps/Auxy/Auxy.xcodeproj'
-   macaw
-end
+abstract_target 'Macaw-Examples' do
+   pod 'Macaw', :path => "/Users/f3dm76/Work/MacawFork"
 
-target 'Streaks' do
-   workspace 'Streaks'
-   project 'DesignAwardedApps/Streaks/Streaks.xcodeproj'
-   macaw
-end
+   target 'AnimationPrinciples' do 
+      project 'AnimationPrinciples/AnimationPrinciples.xcodeproj'
+   end	
 
-target 'Zova' do
-   workspace 'Zova'
-   project 'DesignAwardedApps/Zova/Zova.xcodeproj'
-   macaw
-end
+   target 'Auxy' do
+      project 'DesignAwardedApps/Auxy/Auxy.xcodeproj'
+   end
 
-target 'GettingStarted' do
-   workspace 'GettingStarted'
-   project 'GettingStarted/GettingStarted.xcodeproj'
-   macaw
-end
+   target 'Streaks' do
+      project 'DesignAwardedApps/Streaks/Streaks.xcodeproj'
+   end
 
-target 'HealthStat' do
-   workspace 'HealthStat'
-   project 'HealthStat/HealthStat.xcodeproj'
-   macaw
-end
+   target 'Zova' do
+      project 'DesignAwardedApps/Zova/Zova.xcodeproj'
+   end
 
-target 'PeriodicTable' do
-   workspace 'PeriodicTable'
-   project 'PeriodicTable/PeriodicTable.xcodeproj'
-   macaw
-end
+   target 'GettingStarted' do
+      project 'GettingStarted/GettingStarted.xcodeproj'
+   end
 
-target 'LiquidSwipe' do
-   workspace 'LiquidSwipe'
-   project 'LiquidSwipe/LiquidSwipe.xcodeproj'
-   macaw
+   target 'HealthStat' do
+      project 'HealthStat/HealthStat.xcodeproj'
+   end
+
+   target 'PeriodicTable' do
+      project 'PeriodicTable/PeriodicTable.xcodeproj'
+   end
+
+   target 'LiquidSwipe' do
+      project 'LiquidSwipe/LiquidSwipe.xcodeproj'
+   end
 end

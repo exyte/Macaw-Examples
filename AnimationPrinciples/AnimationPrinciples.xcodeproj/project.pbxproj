@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A0832485A182E604E779545 /* Pods_AnimationPrinciples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBD8433C8818E878ABCA759 /* Pods_AnimationPrinciples.framework */; };
+		39B2F1DB0E07FE60CAEABBA5 /* Pods_Macaw_Examples_AnimationPrinciples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA7BF393CBEC94EC0B1A185 /* Pods_Macaw_Examples_AnimationPrinciples.framework */; };
 		5B0DF30821195F7B00F82AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DF30721195F7B00F82AC8 /* AppDelegate.swift */; };
 		5B0DF30A21195F7B00F82AC8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DF30921195F7B00F82AC8 /* MenuViewController.swift */; };
 		5B0DF30D21195F7B00F82AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DF30B21195F7B00F82AC8 /* Main.storyboard */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5672178E4DB7357BA6C120CF /* Pods-AnimationPrinciples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPrinciples.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples.release.xcconfig"; sourceTree = "<group>"; };
+		58DE64286F7CCF40A7A675C2 /* Pods-Macaw-Examples-AnimationPrinciples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-AnimationPrinciples.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-AnimationPrinciples/Pods-Macaw-Examples-AnimationPrinciples.release.xcconfig"; sourceTree = "<group>"; };
 		5B0DF30421195F7B00F82AC8 /* AnimationPrinciples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPrinciples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0DF30721195F7B00F82AC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B0DF30921195F7B00F82AC8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		5B8AF480211C49FE00CBB4A7 /* AnticipationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnticipationViewController.swift; sourceTree = "<group>"; };
 		5B8AF482211EB41700CBB4A7 /* RhythmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmViewController.swift; sourceTree = "<group>"; };
 		5BE4564121F9D8B700EF628E /* OverlappingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlappingViewController.swift; sourceTree = "<group>"; };
-		7DBD8433C8818E878ABCA759 /* Pods_AnimationPrinciples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationPrinciples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE6ED69FE98E368301A89B37 /* Pods-AnimationPrinciples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationPrinciples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples.debug.xcconfig"; sourceTree = "<group>"; };
+		796ABD06676FF311107E7A25 /* Pods-Macaw-Examples-AnimationPrinciples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-AnimationPrinciples.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-AnimationPrinciples/Pods-Macaw-Examples-AnimationPrinciples.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA7BF393CBEC94EC0B1A185 /* Pods_Macaw_Examples_AnimationPrinciples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaw_Examples_AnimationPrinciples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A0832485A182E604E779545 /* Pods_AnimationPrinciples.framework in Frameworks */,
+				39B2F1DB0E07FE60CAEABBA5 /* Pods_Macaw_Examples_AnimationPrinciples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +63,8 @@
 			children = (
 				5B0DF30621195F7B00F82AC8 /* AnimationPrinciples */,
 				5B0DF30521195F7B00F82AC8 /* Products */,
-				F2960AE46DA676214DD7A480 /* Pods */,
 				B1D0A9B2F4A041E457A15AC1 /* Frameworks */,
+				905176F7F98C6B34A305A468 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,21 +106,21 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
+		905176F7F98C6B34A305A468 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				796ABD06676FF311107E7A25 /* Pods-Macaw-Examples-AnimationPrinciples.debug.xcconfig */,
+				58DE64286F7CCF40A7A675C2 /* Pods-Macaw-Examples-AnimationPrinciples.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B1D0A9B2F4A041E457A15AC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7DBD8433C8818E878ABCA759 /* Pods_AnimationPrinciples.framework */,
+				8BA7BF393CBEC94EC0B1A185 /* Pods_Macaw_Examples_AnimationPrinciples.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F2960AE46DA676214DD7A480 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE6ED69FE98E368301A89B37 /* Pods-AnimationPrinciples.debug.xcconfig */,
-				5672178E4DB7357BA6C120CF /* Pods-AnimationPrinciples.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +198,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-AnimationPrinciples/Pods-Macaw-Examples-AnimationPrinciples-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimationPrinciples/Pods-AnimationPrinciples-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-AnimationPrinciples/Pods-Macaw-Examples-AnimationPrinciples-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		47EEEF6D4B1A2A2ECCE16A86 /* [CP] Check Pods Manifest.lock */ = {
@@ -223,7 +223,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AnimationPrinciples-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Macaw-Examples-AnimationPrinciples-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -389,7 +389,7 @@
 		};
 		5B0DF31721195F7E00F82AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE6ED69FE98E368301A89B37 /* Pods-AnimationPrinciples.debug.xcconfig */;
+			baseConfigurationReference = 796ABD06676FF311107E7A25 /* Pods-Macaw-Examples-AnimationPrinciples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -409,7 +409,7 @@
 		};
 		5B0DF31821195F7E00F82AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5672178E4DB7357BA6C120CF /* Pods-AnimationPrinciples.release.xcconfig */;
+			baseConfigurationReference = 58DE64286F7CCF40A7A675C2 /* Pods-Macaw-Examples-AnimationPrinciples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

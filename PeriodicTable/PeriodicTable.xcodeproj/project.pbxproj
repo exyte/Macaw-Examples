@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B351331926B54DD60868EB1 /* Pods_PeriodicTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4CF6D177E612B0B217F014 /* Pods_PeriodicTable.framework */; };
 		57378C421DC99FF200BDEA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C341DC99FF200BDEA57 /* AppDelegate.swift */; };
 		57378C441DC99FF200BDEA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3A1DC99FF200BDEA57 /* Assets.xcassets */; };
 		57378C451DC99FF200BDEA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57378C3D1DC99FF200BDEA57 /* LaunchScreen.storyboard */; };
@@ -15,12 +14,11 @@
 		57378C471DC99FF200BDEA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57378C411DC99FF200BDEA57 /* ViewController.swift */; };
 		58AB71071DD2469200EE8A09 /* PeriodicTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71051DD2469200EE8A09 /* PeriodicTable.swift */; };
 		58AB71081DD2469200EE8A09 /* PeriodicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */; };
+		93AD3FC0799F033516B34C1B /* Pods_Macaw_Examples_PeriodicTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E0B0DF3D846758BFCCE4B6 /* Pods_Macaw_Examples_PeriodicTable.framework */; };
 		B014EA441DE2FAF500ADD2B2 /* table.json in Resources */ = {isa = PBXBuildFile; fileRef = B014EA431DE2FAF500ADD2B2 /* table.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D4CF6D177E612B0B217F014 /* Pods_PeriodicTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeriodicTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4029D615A6AC184D2F12E814 /* Pods-PeriodicTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriodicTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable.release.xcconfig"; sourceTree = "<group>"; };
 		57378C0D1DC99ECA00BDEA57 /* PeriodicTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriodicTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57378C341DC99FF200BDEA57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57378C351DC99FF200BDEA57 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,7 +29,9 @@
 		58AB71051DD2469200EE8A09 /* PeriodicTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTable.swift; sourceTree = "<group>"; };
 		58AB71061DD2469200EE8A09 /* PeriodicTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTableController.swift; sourceTree = "<group>"; };
 		B014EA431DE2FAF500ADD2B2 /* table.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = table.json; sourceTree = "<group>"; };
-		BF9127A3AA73AF1A4D6EACF3 /* Pods-PeriodicTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeriodicTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable.debug.xcconfig"; sourceTree = "<group>"; };
+		CA8F3DCD74A5A5E0929B9607 /* Pods-Macaw-Examples-PeriodicTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-PeriodicTable.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-PeriodicTable/Pods-Macaw-Examples-PeriodicTable.release.xcconfig"; sourceTree = "<group>"; };
+		CBC7FBFED3DF08EC6FF4CC9A /* Pods-Macaw-Examples-PeriodicTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaw-Examples-PeriodicTable.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Macaw-Examples-PeriodicTable/Pods-Macaw-Examples-PeriodicTable.debug.xcconfig"; sourceTree = "<group>"; };
+		D1E0B0DF3D846758BFCCE4B6 /* Pods_Macaw_Examples_PeriodicTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaw_Examples_PeriodicTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +39,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B351331926B54DD60868EB1 /* Pods_PeriodicTable.framework in Frameworks */,
+				93AD3FC0799F033516B34C1B /* Pods_Macaw_Examples_PeriodicTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BA22C84E48099D036881FBF /* Pods */ = {
+		05CE38F6C89CC11CF7F3C5FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF9127A3AA73AF1A4D6EACF3 /* Pods-PeriodicTable.debug.xcconfig */,
-				4029D615A6AC184D2F12E814 /* Pods-PeriodicTable.release.xcconfig */,
+				CBC7FBFED3DF08EC6FF4CC9A /* Pods-Macaw-Examples-PeriodicTable.debug.xcconfig */,
+				CA8F3DCD74A5A5E0929B9607 /* Pods-Macaw-Examples-PeriodicTable.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -58,7 +58,7 @@
 		5304DD72AA36F401213D3560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D4CF6D177E612B0B217F014 /* Pods_PeriodicTable.framework */,
+				D1E0B0DF3D846758BFCCE4B6 /* Pods_Macaw_Examples_PeriodicTable.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -71,8 +71,8 @@
 				57378C341DC99FF200BDEA57 /* AppDelegate.swift */,
 				57378C351DC99FF200BDEA57 /* Info.plist */,
 				57378C0E1DC99ECA00BDEA57 /* Products */,
-				4BA22C84E48099D036881FBF /* Pods */,
 				5304DD72AA36F401213D3560 /* Frameworks */,
+				05CE38F6C89CC11CF7F3C5FE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,7 +192,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-PeriodicTable/Pods-Macaw-Examples-PeriodicTable-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
@@ -203,7 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeriodicTable/Pods-PeriodicTable-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Macaw-Examples-PeriodicTable/Pods-Macaw-Examples-PeriodicTable-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE811CF4922E65260B82C3B4 /* [CP] Check Pods Manifest.lock */ = {
@@ -217,7 +217,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PeriodicTable-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Macaw-Examples-PeriodicTable-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,7 +373,7 @@
 		};
 		57378C201DC99ECA00BDEA57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF9127A3AA73AF1A4D6EACF3 /* Pods-PeriodicTable.debug.xcconfig */;
+			baseConfigurationReference = CBC7FBFED3DF08EC6FF4CC9A /* Pods-Macaw-Examples-PeriodicTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -390,7 +390,7 @@
 		};
 		57378C211DC99ECA00BDEA57 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4029D615A6AC184D2F12E814 /* Pods-PeriodicTable.release.xcconfig */;
+			baseConfigurationReference = CA8F3DCD74A5A5E0929B9607 /* Pods-Macaw-Examples-PeriodicTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
