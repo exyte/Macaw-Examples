@@ -20,7 +20,7 @@ class TrajectoryViewController: BaseViewController {
         let circle = Shape(
             form: Circle(r: 30),
             fill: color,
-            place: .move(dx: origin.x, dy: origin.y)
+            place: .move(dx: 60, dy: 60)
         )
         
         let m = PathSegment(type: .M, data: [origin.x, origin.y])

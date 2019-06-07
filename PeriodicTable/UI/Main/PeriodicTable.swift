@@ -23,7 +23,7 @@ class PeriodicTable: MacawView {
 
 	private var showTable = true
 
-	private var animations: [Animation] = []
+    private var animation: Animation?
 
 	private static let table: [Element] = PeriodicTable.fillTable()
 
@@ -82,15 +82,17 @@ class PeriodicTable: MacawView {
 	}
 
 	func start() {
+        var animations = [Animation]()
 		for (i, node) in elements.enumerated() {
 			let layer = (i % 25)
 			let sign = ((layer % 5) % 2) == 0 ? 1.0 : -1.0
 			let sign2 = (i / 25) % 2 == 0 ? 1.0 : -1.0
 			let newPlace = node.place.concat(with: .move(dx: 0, dy: sign * sign2 * 300))
 			let anim = node.placeVar.animation(from: node.place, to: newPlace, during: 10.0).easing(.linear)
-			anim.play()
 			animations.append(anim)
 		}
+        animation = animations.combine()
+        animation?.play()
 	}
 
 	static func gridLayer(_ scale: Double) -> [Transform] {
@@ -145,23 +147,26 @@ class PeriodicTable: MacawView {
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		for animation in animations {
-			animation.stop()
-		}
-		animations.removeAll()
+
+        animation?.stop()
+
+        var animations = [Animation]()
 		if (showTable) {
 			for (i, node) in elements.enumerated() {
 				let element = PeriodicTable.table[i]
 				let pos = PeriodicTable.getPos(row: element.row, column: element.column)
-				node.placeVar.animate(to: pos, during: 1.0)
+				animations.append(node.placeVar.animation(to: pos, during: 1.0))
 			}
 		} else {
 			let data = PeriodicTable.gridData()
 			for (i, node) in elements.enumerated() {
-				node.placeVar.animate(to: data[i], during: 1.0)
+				animations.append(node.placeVar.animation(to: data[i], during: 1.0))
 			}
 		}
 		showTable = !showTable
+
+        animation = animations.combine()
+        animation?.play()
 	}
 
 	static func getOpacity(_ element: Element) -> Double {
