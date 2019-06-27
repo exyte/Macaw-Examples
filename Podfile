@@ -13,7 +13,7 @@ project 'PeriodicTable/PeriodicTable.xcodeproj'
 project 'LiquidSwipe/LiquidSwipe.xcodeproj'
 
 abstract_target 'Macaw-Examples' do
-   pod 'Macaw', :path => "/Users/f3dm76/Work/MacawFork"
+   pod 'Macaw'
 
    target 'AnimationPrinciples' do 
       project 'AnimationPrinciples/AnimationPrinciples.xcodeproj'
