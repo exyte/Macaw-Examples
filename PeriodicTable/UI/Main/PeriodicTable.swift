@@ -39,8 +39,7 @@ class PeriodicTable: MacawView {
 			drand48()
 			let group = Group(contents: [
 				Shape(form: Rect(w: elementSize.w, h: elementSize.h),
-					fill: Color.rgba(r: 0, g: 127, b: 127, a: getOpacity(element))
-				),
+					fill: getColor(element)),
 				Text(text: "\(i+1)",
 					font: Font(name: "Helvetica", size: 12),
 					fill: Color(val: 0xc1f7f7),
@@ -169,30 +168,30 @@ class PeriodicTable: MacawView {
         animation?.play()
 	}
 
-	static func getOpacity(_ element: Element) -> Double {
-		switch element.type {
-		case .Alkali:
-			return 0.8
-		case .Alkaline:
-			return 0.5
-		case .Transition:
-			return 0.3
-		case .Basic:
-			return 0.4
-		case .Semi:
-			return 0.5
-		case .Nonmetal:
-			return 0.6
-		case .Halogen:
-			return 0.75
-		case .NobleGas:
-			return 0.9
-		case .Lanthanide:
-			return 0.45
-		case .Actinide:
-			return 0.65
-		}
-	}
+    static func getColor(_ element: Element) -> Color {
+        switch element.type {
+        case .Alkali:
+            return Color(val: 0xFD9856).with(a: 0.5)
+        case .Alkaline:
+            return Color(val: 0xEE1B1A).with(a: 0.5)
+        case .Transition:
+            return Color(val: 0xFEE734).with(a: 0.5)
+        case .Basic:
+            return Color(val: 0x1DBE54).with(a: 0.5)
+        case .Semi:
+            return Color(val: 0x7ECF46).with(a: 0.5)
+        case .Nonmetal:
+            return Color(val: 0xB2B3B5).with(a: 0.5)
+        case .Halogen:
+            return Color(val: 0x23C8CA).with(a: 0.5)
+        case .NobleGas:
+            return Color(val: 0x168CD0).with(a: 0.5)
+        case .Lanthanide:
+            return Color(val: 0x8977B5).with(a: 0.5)
+        case .Actinide:
+            return Color(val: 0xFD93BE).with(a: 0.5)
+        }
+    }
 
 }
 
