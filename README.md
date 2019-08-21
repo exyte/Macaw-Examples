@@ -1,9 +1,9 @@
-<img src="https://github.com/exyte/Macaw-Examples/blob/mater/header.png">
+<img src="https://github.com/exyte/Macaw-Examples/blob/master/header.png">
 <img align="right" src="https://raw.githubusercontent.com/exyte/Macaw-Examples/master/demo.gif" width="480" />
 
 <p><h1 align="left">Macaw-Examples</h1></p>
 
-<p><h4>Macaw Examples is a place where you can find various usages of the [Macaw](https://github.com/exyte/macaw) library.
+<p><h4>Macaw Examples is a place where you can find various usages of the <a href="https://github.com/exyte/macaw">Macaw</a> library.
 </h4></p>
 
 ___
