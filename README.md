@@ -1,6 +1,20 @@
-# Macaw-Examples
+<img src="https://github.com/exyte/Macaw-Examples/blob/mater/header.png">
+<img align="right" src="https://raw.githubusercontent.com/exyte/Macaw-Examples/master/demo.gif" width="480" />
 
-Macaw Examples is a place where you can find various usages of the [Macaw](https://github.com/exyte/macaw) library.
+<p><h1 align="left">Macaw-Examples</h1></p>
+
+<p><h4>Macaw Examples is a place where you can find various usages of the [Macaw](https://github.com/exyte/macaw) library.
+</h4></p>
+
+___
+
+<p> We are a development agency building <a href="https://clutch.co/profile/exyte#review-731233">phenomenal</a> apps.</p>
+
+</br>
+
+<a href="https://exyte.com/contacts"><img src="https://i.imgur.com/vGjsQPt.png" width="134" height="34"></a> <a href="https://twitter.com/exyteHQ"><img src="https://i.imgur.com/DngwSn1.png" width="165" height="34"></a>
+
+</br></br>
 
 ## Launching Example
 
@@ -50,10 +64,6 @@ Liquid Swipe concept showing amination with smooth tranformation for forward and
 ## Requirements
 * iOS 8.0+ / Mac OS X 10.9+
 * Xcode 8.0+
-
-## Author
-
-This project is maintained by [exyte](http://www.exyte.com). We design and build mobile and VR/AR applications.
 
 ## License
 
