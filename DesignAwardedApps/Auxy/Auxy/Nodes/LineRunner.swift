@@ -37,7 +37,8 @@ class LineRunner: Shape {
     }
     
     func stop() {
-        runAnimation?.stop()
-        self.opacityVar.animation(to: 0.0, during: 0.1).play()
+        self.opacityVar.animation(to: 0.0, during: 0.1).onComplete {
+            self.runAnimation?.stop()
+        }.play()
     }
 }
