@@ -13,18 +13,17 @@ class TrajectoryViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let origin = Point(x: 60, y: 60)
         let distance = 200.0
         let duration = 0.7
         
         let circle = Shape(
             form: Circle(r: 30),
             fill: color,
-            place: .move(dx: 60, dy: 60)
+            place: .move(dx: 60, dy: 90)
         )
         
-        let m = PathSegment(type: .M, data: [origin.x, origin.y])
-        let q = PathSegment(type: .Q, data: [origin.x + distance/2, origin.y - 30, origin.x + distance, origin.y])
+        let m = PathSegment(type: .M, data: [0, 0])
+        let q = PathSegment(type: .Q, data: [distance/2, -50, distance, 0])
         let circleAnimation = circle.placeVar.animation(along: Path(segments: [m, q]), during: duration).easing(.linear)
         
         let rect = Shape(
